@@ -43,3 +43,18 @@ class BrowseTests(unittest.TestCase):
             result = asyncio.run(browse(Client('de'), 'https://www.apple.com/de/shop/buy-mac/test', {'memory': '48 GB'}))
         self.assertEqual(result['selection'], {'memory': '48 GB'})
         self.assertEqual(result['price'], 120)
+
+    def test_variant_delivery_failure_keeps_product_results(self):
+        metadata = {'products': [{'partNumber': 'PART', 'fullPrice': 'p', 'dimensionColor': 'white'}],
+                    'displayValues': {'dimensionColor': {'white': {'value': 'White'}},
+                                      'prices': {'p': {'amountBeforeTradeIn': 100, 'priceCurrency': 'EUR'}}}}
+        async def fetch(url, **kwargs):
+            return 'productSelectionData: ' + json.dumps(metadata), url
+        async def blocked(client, url, parts, postcode):
+            raise RetailerError('Apple rejected the request.', code='blocked')
+        with patch('apple_store_mcp.shop.browse.fetch_text', fetch), patch('apple_store_mcp.shop.browse.delivery', blocked):
+            result = asyncio.run(browse(Client('de'), 'https://www.apple.com/de/shop/buy-iphone/example',
+                                        postal_code='10115'))
+        self.assertEqual(result['variants'][0]['price'], 100)
+        self.assertEqual(result['issues'][0]['stage'], 'delivery')
+        self.assertEqual(result['issues'][0]['code'], 'blocked')

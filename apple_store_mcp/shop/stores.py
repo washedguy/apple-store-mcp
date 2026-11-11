@@ -1,4 +1,5 @@
 """Find Apple retail stores."""
+from datetime import datetime, timezone
 
 from .errors import RetailerError
 from .http import fetch_text
@@ -17,9 +18,10 @@ async def _enrich(self, entry):
             parsed = parse_store_page(page_html)
         except RetailerError:
             parsed = None
-        _store_page_cache[url] = parsed
+        if parsed:
+            _store_page_cache[url] = parsed
     store = {
-        "id": None,
+        "id": entry.get("id"),
         "name": entry["name"],
         "url": url,
         "region": entry.get("region"),
@@ -28,7 +30,7 @@ async def _enrich(self, entry):
         "phone": None,
     }
     if parsed:
-        store["id"] = parsed.get("id")
+        store["id"] = parsed.get("id") or store["id"]
         store["name"] = parsed.get("name") or store["name"]
         store["address"] = parsed.get("address") or store["address"]
         store["position"] = parsed.get("position") or store["position"]
@@ -104,4 +106,5 @@ async def list_all(self):
     entries = parse_store_list(html, self.base, self.country, self.language)
     if not entries:
         raise RetailerError('Apple store list did not contain stores.', code='retailer_changed')
-    return {'country': self.country, 'stores': entries, 'count': len(entries)}
+    return {'country': self.country, 'stores': entries, 'count': len(entries),
+            'observed_at': datetime.now(timezone.utc).isoformat()}

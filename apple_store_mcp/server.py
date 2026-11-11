@@ -4,24 +4,25 @@ from typing import Annotated, Literal
 from .mcp_api.server import StructuredMCPServer
 from mcp.server.mcpserver.exceptions import ToolError
 from pydantic import Field
-from .mcp_api.schemas import AllStoresResult, BrowseResult, ConfigurationResult, DeliveryEstimates, VariantPickupResult, FulfillmentResult, ProductResult, SearchResult, SitemapResult, StorefrontList, StoreResult
+from .mcp_api.schemas import AllStoresResult, BrowseResult, ComparisonResult, ConfigurationDeliveryEstimates, ConfigurationResult, DeliveryEstimates, VariantPickupResult, FulfillmentResult, ProductResult, SearchResult, SitemapResult, StorefrontList, StoreResult
 
 from .client import Client, RetailerError
 from .shop.config import STOREFRONTS
 from .shop.cache import cached_call
 from .shop.browse import browse
+from .shop.comparison import compare
 from .shop.fulfillment import variant_pickup
 from .shop.stores import list_all
 
 mcp = StructuredMCPServer("apple-store", instructions=(
     "Search the Apple Store. Use list_storefronts to discover supported countries and shop languages. "
     "Use search_products for sitemap discovery; select apple_search and the accessories tab for priced accessory results. "
-    "Use explore_product on a product page to discover buy choices, readable configuration options, prices, and optional nearby store availability. Use get_product for product details. Use get_configuration_options for current price and compatible choices; use get_configuration_pickup to check those selections near a location. Use check_delivery with part numbers and a postal code for delivery estimates. These tools only read information. Use find_stores to find Apple retail stores. "
+    "Use explore_product on a product page to discover buy choices, readable configuration options, prices, and optional nearby store availability. Use get_product for product details. Use get_configuration_options for current price and compatible choices; use get_configuration_pickup to check those selections near a location. Use compare_availability to compare variant pickup and delivery across locations, including all stores in smaller countries. Use check_delivery for part numbers or check_configuration_delivery for configured products and a postal code. These tools only read information. Use find_stores to find Apple retail stores. "
     "Prices and availability can change; availability is not a reservation or exact stock count."
 ))
 
 Country = Annotated[str, Field(description="Storefront country code, e.g. us, de, fr, ch, be. Use list_storefronts for supported values.")]
-Language = Annotated[str | None, Field(description="Shop language; defaults to the country's main language. Switzerland: de/fr; Belgium: fr/nl.")]
+Language = Annotated[str | None, Field(description="Shop language; defaults to the country's main language. Switzerland: de/fr; Belgium: fr/nl; Canada: en/fr.")]
 
 
 def _client(country, language):
@@ -125,10 +126,11 @@ async def explore_product(
     language: Language = None,
     options: Annotated[dict[str, str] | None, Field(description="Optional choices, e.g. {\"memory\": \"48 GB\"}. To preserve a previous configuration, pass its selection object with the desired changes.")] = None,
     location: Annotated[str | None, Field(max_length=150, description="Optional city or postal code to check nearby store availability.")] = None,
+    postal_code: Annotated[str | None, Field(max_length=32, description="Optional delivery postal code.")] = None,
 ) -> BrowseResult:
-    """Explore a product page, see buy choices, or configure a product using the option names and values returned by this tool. Add a location to see store quotes. Read-only; no reservation or purchase. Online delivery is not checked."""
+    """Explore product choices, variants and prices; add a location for nearby store quotes or postal_code for delivery estimates. Read-only; no reservation or purchase."""
     try:
-        return BrowseResult.model_validate(await browse(_client(country, language), url, options, location))
+        return BrowseResult.model_validate(await browse(_client(country, language), url, options, location, postal_code))
     except RetailerError as exc:
         raise ToolError(f"[{exc.code}] {exc}") from exc
 
@@ -163,6 +165,22 @@ async def check_delivery(
 
 
 @mcp.tool(structured_output=True)
+async def check_configuration_delivery(
+    buy_url: Annotated[str, Field(description="Apple buy-page URL for the selected storefront.")],
+    collection: Annotated[str, Field(description="Configurator collection identifier.")],
+    selections: Annotated[dict[str, str], Field(description="Selected configuration dimensions and values.")],
+    postal_code: Annotated[str, Field(min_length=1, max_length=32, description="Delivery postal code.")],
+    country: Country = "us",
+    language: Language = None,
+) -> ConfigurationDeliveryEstimates:
+    """Check delivery estimates for a configurable product. The returned configuration identifies the checked selections. No purchase or reservation is made; a missing estimate is unknown."""
+    try:
+        return ConfigurationDeliveryEstimates.model_validate(await _client(country, language).configuration_delivery(buy_url, collection, selections, postal_code))
+    except RetailerError as exc:
+        raise ToolError(f"[{exc.code}] {exc}") from exc
+
+
+@mcp.tool(structured_output=True)
 async def get_configuration_pickup(
     buy_url: Annotated[str, Field(description="Apple buy-page URL in the selected storefront.")],
     location: Annotated[str, Field(min_length=1, max_length=150, description="City or postal code near the desired Apple stores.")],
@@ -191,6 +209,23 @@ async def browse_sitemap(
         result = await cached_call("search", ("sitemap", country, language, query), fresh,
                                    lambda: client.sitemap(query))
         return SitemapResult.model_validate(result)
+    except RetailerError as exc:
+        raise ToolError(f"[{exc.code}] {exc}") from exc
+
+
+@mcp.tool(structured_output=True)
+async def compare_availability(
+    buy_url: Annotated[str, Field(description="Apple buy-page URL for the selected storefront.")],
+    part_numbers: Annotated[list[str], Field(min_length=1, max_length=20, description="Part numbers to compare.")],
+    country: Country = "us",
+    language: Language = None,
+    pickup_locations: Annotated[list[str] | None, Field(description="Cities or postal codes to search for nearby stores.")] = None,
+    delivery_postcodes: Annotated[list[str] | None, Field(description="Postcodes to check for delivery estimates.")] = None,
+    all_stores: Annotated[bool, Field(description="Check the country directory and attempt every listed store; limited to countries with at most 30 stores.")] = False,
+) -> ComparisonResult:
+    """Compare pickup and delivery estimates for variants. Failed, missing and unchecked results are reported as unknown. Read-only; does not reserve or purchase."""
+    try:
+        return ComparisonResult.model_validate(await compare(_client(country, language), buy_url, part_numbers, pickup_locations or [], delivery_postcodes or [], all_stores))
     except RetailerError as exc:
         raise ToolError(f"[{exc.code}] {exc}") from exc
 

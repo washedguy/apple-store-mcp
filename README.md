@@ -39,16 +39,20 @@ Use `list_storefronts` to see the supported countries and languages. Prices, del
 
 1. `search_products` finds product pages. By default it uses Apple's sitemap, which is useful for discovery but is not a complete catalog of individual products.
 2. `explore_product` follows a product page to buying choices. For supported pages it returns named variants or configuration options and prices. `get_product` also returns available product details and part numbers.
-3. For a discrete variant, `check_delivery` checks delivery estimates for part numbers and a postal code; `check_variant_pickup` checks nearby store pickup quotes. `list_apple_stores` lists a country's stores.
-4. For a configurable product, `explore_product` can show options and nearby pickup. Pass its returned `selection` back as `options` when changing a choice to preserve the rest of the configuration.
+3. Add `location` to `explore_product` for nearby store quotes and `postal_code` for delivery estimates. For a configurable product, pass its returned `selection` back as `options` when changing a choice to preserve the rest of the configuration. If a check fails, product data is retained and the failure appears in `issues`.
+4. Alternatively, use `check_delivery` and `check_variant_pickup` with part numbers, or `list_apple_stores` to browse a country's store directory.
 
-The lower-level `get_configuration_options` and `get_configuration_pickup` tools accept Apple's collection and dimension identifiers. `browse_sitemap` and `find_stores` provide additional discovery options. The server is read-only.
+Use `compare_availability` to check several pickup locations and delivery postcodes together. Set `all_stores: true` to attempt all stores in a country with at most 30 Apple Stores. The response identifies failed checks, missing stores, missing variant quotes and unknown statuses; `complete` refers to the requested checks, not every possible postcode or retailer. Each store and delivery result carries its own observation time. All-store checks may take a minute or longer.
+
+The lower-level `get_configuration_options`, `get_configuration_pickup` and `check_configuration_delivery` tools accept Apple's collection and dimension identifiers. `browse_sitemap` and `find_stores` provide additional discovery options. The server is read-only.
 
 ## Limitations
 
 - Apple’s interfaces are unofficial and may change or block requests. Coverage varies by product and country; unknown or missing data does not mean an item is unavailable.
+- The server has been live-tested with German, US, UK, Japanese, Swiss French, Belgian Dutch and French-Canadian product pages; this is not a guarantee for every product, carrier or storefront. Some carrier-specific details may not be represented.
+- An HTTP 541 response is reported as blocked; its precise cause is not inferred. Failed checks are not reported as out of stock.
 - The sitemap does not list every variant. Apple search is available with `source: apple_search`; its accessories tab can include purchasable products and prices.
-- Delivery estimates are supported for discrete part numbers. Delivery for configurable kits has not been verified. Checking every store or postcode requires multiple calls.
+- Delivery estimates are supported for discrete part numbers and supported configurable kits. Configurable-kit delivery was verified with a German MacBook Pro; coverage for other products and storefronts is not yet established. Comparing delivery across postcodes requires choosing those postcodes.
 - Configurator prices can be starting prices. Option price changes depend on the selected configuration; upgrades may require changing other choices.
 - Search, product and store results use short process-local caches. Use `fresh: true` where available to bypass them.
 
@@ -64,5 +68,7 @@ uv build
 ```
 
 Run `uv run apple-store-mcp` to start the stdio server, or `uv run python -m apple_store_mcp --config` to print a local client configuration. `uv run python -m apple_store_mcp --check de` runs a live diagnostic; Apple can block or rate-limit requests. Optional proxies use the standard `HTTPS_PROXY` environment variable; see [.env.example](.env.example).
+
+CI runs offline fixtures and a real stdio MCP client test. Maintainers can optionally run the live Germany diagnostic through the GitHub Actions workflow's manual `live_check` input; a live failure may reflect Apple blocking the runner.
 
 Unofficial project, not affiliated with Apple. Licensed under the [MIT License](LICENSE).

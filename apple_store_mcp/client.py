@@ -43,6 +43,9 @@ class Client:
     async def delivery(self, buy_url, parts, postal_code):
         return await delivery.delivery(self, buy_url, parts, postal_code)
 
+    async def configuration_delivery(self, buy_url, collection, selections, postal_code):
+        return await delivery.configuration_delivery(self, buy_url, collection, selections, postal_code)
+
     async def fulfillment(self, buy_url, collection, selections, location):
         return await fulfillment.fulfillment(self, buy_url, collection, selections, location)
 

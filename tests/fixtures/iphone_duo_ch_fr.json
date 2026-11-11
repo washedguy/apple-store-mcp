@@ -1,0 +1,118 @@
+{
+  "products": [
+    {
+      "partNumber": "MK2H4QL/A",
+      "dimensionSteporder": null,
+      "fullPrice": "mk2h4ql_a",
+      "dimensionCapacity": "1tb",
+      "dimensionColor": "starwhite"
+    },
+    {
+      "partNumber": "MK2J4QL/A",
+      "dimensionSteporder": null,
+      "fullPrice": "mk2j4ql_a",
+      "dimensionCapacity": "1tb",
+      "dimensionColor": "nightsky"
+    },
+    {
+      "partNumber": "MK2F4QL/A",
+      "dimensionSteporder": null,
+      "fullPrice": "mk2f4ql_a",
+      "dimensionCapacity": "512gb",
+      "dimensionColor": "starwhite"
+    },
+    {
+      "partNumber": "MK2G4QL/A",
+      "dimensionSteporder": null,
+      "fullPrice": "mk2g4ql_a",
+      "dimensionCapacity": "512gb",
+      "dimensionColor": "nightsky"
+    },
+    {
+      "partNumber": "MK2D4QL/A",
+      "dimensionSteporder": null,
+      "fullPrice": "mk2d4ql_a",
+      "dimensionCapacity": "256gb",
+      "dimensionColor": "starwhite"
+    },
+    {
+      "partNumber": "MK2E4QL/A",
+      "dimensionSteporder": null,
+      "fullPrice": "mk2e4ql_a",
+      "dimensionCapacity": "256gb",
+      "dimensionColor": "nightsky"
+    },
+    {
+      "partNumber": "MK2K4QL/A",
+      "dimensionSteporder": null,
+      "fullPrice": "mk2k4ql_a",
+      "dimensionCapacity": "2tb",
+      "dimensionColor": "starwhite"
+    },
+    {
+      "partNumber": "MK2L4QL/A",
+      "dimensionSteporder": null,
+      "fullPrice": "mk2l4ql_a",
+      "dimensionCapacity": "2tb",
+      "dimensionColor": "nightsky"
+    }
+  ],
+  "displayValues": {
+    "dimensionColor": {
+      "starwhite": {
+        "value": "Blanc stellaire"
+      },
+      "nightsky": {
+        "value": "Ciel nocturne"
+      }
+    },
+    "dimensionCapacity": {
+      "256gb": {
+        "value": "256 <small>Go</small><as-footnote data-id=\"6c341d797a26c8d39cc2f0a6925a8d4e\" data-assigned=\"true\"><sup data-autom=\"footnote-sub\" class=\"as-footnote\"><span class=\"visuallyhidden\">&nbsp;Note de bas de page&nbsp;</span>1</sup></as-footnote>"
+      },
+      "512gb": {
+        "value": "512 <small>Go</small><as-footnote data-id=\"6c341d797a26c8d39cc2f0a6925a8d4e\" data-assigned=\"true\"><sup data-autom=\"footnote-sub\" class=\"as-footnote\"><span class=\"visuallyhidden\">&nbsp;Note de bas de page&nbsp;</span>1</sup></as-footnote>"
+      },
+      "1tb": {
+        "value": "1<small>TB</small><as-footnote data-id=\"6c341d797a26c8d39cc2f0a6925a8d4e\" data-assigned=\"true\"><sup data-autom=\"footnote-sub\" class=\"as-footnote\"><span class=\"visuallyhidden\">&nbsp;Note de bas de page&nbsp;</span>1</sup></as-footnote>\n"
+      },
+      "2tb": {
+        "value": "2<small>TB</small><as-footnote data-id=\"6c341d797a26c8d39cc2f0a6925a8d4e\" data-assigned=\"true\"><sup data-autom=\"footnote-sub\" class=\"as-footnote\"><span class=\"visuallyhidden\">&nbsp;Note de bas de page&nbsp;</span>1</sup></as-footnote>"
+      }
+    },
+    "prices": {
+      "mk2e4ql_a": {
+        "amountBeforeTradeIn": 1999.0,
+        "priceCurrency": "CHF"
+      },
+      "mk2g4ql_a": {
+        "amountBeforeTradeIn": 2199.0,
+        "priceCurrency": "CHF"
+      },
+      "mk2j4ql_a": {
+        "amountBeforeTradeIn": 2599.0,
+        "priceCurrency": "CHF"
+      },
+      "mk2f4ql_a": {
+        "amountBeforeTradeIn": 2199.0,
+        "priceCurrency": "CHF"
+      },
+      "mk2k4ql_a": {
+        "amountBeforeTradeIn": 3199.0,
+        "priceCurrency": "CHF"
+      },
+      "mk2l4ql_a": {
+        "amountBeforeTradeIn": 3199.0,
+        "priceCurrency": "CHF"
+      },
+      "mk2d4ql_a": {
+        "amountBeforeTradeIn": 1999.0,
+        "priceCurrency": "CHF"
+      },
+      "mk2h4ql_a": {
+        "amountBeforeTradeIn": 2599.0,
+        "priceCurrency": "CHF"
+      }
+    }
+  }
+}

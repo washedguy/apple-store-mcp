@@ -70,8 +70,10 @@ async def fetch_text(url, *, timeout=20, headers=None, retries=2, session=None):
             await asyncio.sleep(3 * (attempt + 1))
             continue
         break
-    if last_status == 429 or last_status == 541:
+    if last_status == 429:
         raise RetailerError(f"Request returned HTTP {last_status}.", code="rate_limited")
+    if last_status == 541:
+        raise RetailerError("Apple rejected the request (HTTP 541).", code="blocked")
     if last_status == 404:
         raise RetailerError("Request returned HTTP 404.", code="not_found")
     if last_status == 403:

@@ -1,12 +1,14 @@
 """Discover buy links and present Apple's live configurator with readable labels."""
 import json
 import re
+from datetime import datetime, timezone
 from html.parser import HTMLParser
 from urllib.parse import urljoin, urlsplit
 
 from .configurator import configuration, plain_text
+from .delivery import configuration_delivery, delivery
 from .errors import RetailerError
-from .fulfillment import fulfillment
+from .fulfillment import fulfillment, variant_pickup
 from .http import fetch_text
 from .products import APPLE_HOSTS
 from .parsing import parse_catalog_variants
@@ -106,7 +108,7 @@ def _resolve_requested(requested, labels):
     return resolved
 
 
-async def browse(client, url, requested=None, location=None):
+async def browse(client, url, requested=None, location=None, postal_code=None):
     requested = requested or {}
     if not _valid_url(url, client.host) or urlsplit(url).hostname not in APPLE_HOSTS:
         raise RetailerError('Use an HTTPS Apple URL for the selected storefront.', code='invalid_input')
@@ -125,17 +127,33 @@ async def browse(client, url, requested=None, location=None):
                 choices.append({'name': label, 'url': target})
         if not choices:
             raise RetailerError('No supported buy choices or configurator were found on this page.', code='retailer_changed')
-        if requested or location:
+        if requested or location or postal_code:
             raise RetailerError('Choose a buy option from this page before setting options or a location.', code='invalid_input')
-        return {'kind': 'choices', 'url': final, 'choices': choices}
+        return {'kind': 'choices', 'url': final, 'choices': choices,
+                'observed_at': datetime.now(timezone.utc).isoformat()}
     variants = parse_catalog_variants(html)
     if variants:
-        if location:
-            raise RetailerError('Store availability for these variants is not yet supported by this tool.', code='unsupported')
         for name, value in requested.items():
             variants = [v for v in variants if any(_normalize(name) == _normalize(k) and
                         _normalize(value) == _normalize(val) for k, val in v['attributes'].items())]
-        return {'kind': 'variants', 'url': final, 'currency': client.currency, 'variants': variants}
+        out = {'kind': 'variants', 'url': final, 'currency': client.currency, 'variants': variants,
+               'observed_at': datetime.now(timezone.utc).isoformat()}
+        parts = list(dict.fromkeys(v['part_number'] for v in variants))
+        if (location or postal_code) and not parts:
+            raise RetailerError('No variants match the selected options.', code='invalid_input')
+        if location:
+            try:
+                pickup = await variant_pickup(client, final, parts, location)
+                out.update({'stores': pickup['stores'], 'location': location,
+                            'availability_observed_at': pickup['observed_at']})
+            except RetailerError as exc:
+                out.setdefault('issues', []).append({'stage': 'pickup', 'code': exc.code, 'message': str(exc)})
+        if postal_code:
+            try:
+                out['delivery'] = await delivery(client, final, parts, postal_code)
+            except RetailerError as exc:
+                out.setdefault('issues', []).append({'stage': 'delivery', 'code': exc.code, 'message': str(exc)})
+        return out
     collections = list(dict.fromkeys(re.findall(r'collection=([A-Z0-9_]+_COLLECTION)', html)))
     if len(collections) != 1:
         raise RetailerError('Could not identify a unique configurator for this product.', code='retailer_changed')
@@ -171,8 +189,16 @@ async def browse(client, url, requested=None, location=None):
            'selection': {dim['name']: dim['selected'] for dim in dimensions if dim['selected'] is not None},
            'options': dimensions, 'observed_at': result['observed_at']}
     if location:
-        pickup = await fulfillment(client, final, collections[0], result['selected_dimensions'], location)
-        out['stores'] = pickup['stores']
-        out['location'] = location
-        out['availability_observed_at'] = pickup['observed_at']
+        try:
+            pickup = await fulfillment(client, final, collections[0], result['selected_dimensions'], location)
+            out['stores'] = pickup['stores']
+            out['location'] = location
+            out['availability_observed_at'] = pickup['observed_at']
+        except RetailerError as exc:
+            out.setdefault('issues', []).append({'stage': 'pickup', 'code': exc.code, 'message': str(exc)})
+    if postal_code:
+        try:
+            out['delivery'] = await configuration_delivery(client, final, collections[0], result['selected_dimensions'], postal_code)
+        except RetailerError as exc:
+            out.setdefault('issues', []).append({'stage': 'delivery', 'code': exc.code, 'message': str(exc)})
     return out

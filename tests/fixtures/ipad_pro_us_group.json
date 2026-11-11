@@ -1,0 +1,2891 @@
+{
+  "@type": "ProductGroup",
+  "name": "iPad Pro",
+  "brand": {
+    "@type": "Brand",
+    "name": "Apple"
+  },
+  "url": "https://www.apple.com/shop/buy-ipad/ipad-pro",
+  "hasVariant": [
+    {
+      "@type": "Product",
+      "sku": "MDWV4LL/A",
+      "name": "11-inch iPad Pro Wi‑Fi 2TB with standard glass - Silver",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "storage_capacity",
+          "name": "Storage",
+          "value": "2TB"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "size",
+          "name": "Screen Size",
+          "value": "11-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "display_type",
+          "name": "Display Glass",
+          "value": "Standard glass"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "color",
+          "name": "Color",
+          "value": "Silver"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "connectivity",
+          "name": "Connectivity",
+          "value": "Wi-Fi"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/11-inch-display-2tb-silver-wifi-standard-glass",
+        "priceCurrency": "USD",
+        "price": 2299.0,
+        "sku": "MDWV4LL/A",
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": 0,
+            "currency": "USD"
+          }
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "US",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 14,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        }
+      }
+    },
+    {
+      "@type": "Product",
+      "sku": "MDYM4LL/A",
+      "name": "13-inch iPad Pro Wi‑Fi 512GB with standard glass - Silver",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "storage_capacity",
+          "name": "Storage",
+          "value": "512GB"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "size",
+          "name": "Screen Size",
+          "value": "13-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "display_type",
+          "name": "Display Glass",
+          "value": "Standard glass"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "color",
+          "name": "Color",
+          "value": "Silver"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "connectivity",
+          "name": "Connectivity",
+          "value": "Wi-Fi"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/13-inch-display-512gb-silver-wifi-standard-glass",
+        "priceCurrency": "USD",
+        "price": 1699.0,
+        "sku": "MDYM4LL/A",
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": 0,
+            "currency": "USD"
+          }
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "US",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 14,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        }
+      }
+    },
+    {
+      "@type": "Product",
+      "sku": "MDYJ4LL/A",
+      "name": "13-inch iPad Pro Wi‑Fi 256GB with standard glass - Space Black",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "storage_capacity",
+          "name": "Storage",
+          "value": "256GB"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "size",
+          "name": "Screen Size",
+          "value": "13-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "display_type",
+          "name": "Display Glass",
+          "value": "Standard glass"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "color",
+          "name": "Color",
+          "value": "Space Black"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "connectivity",
+          "name": "Connectivity",
+          "value": "Wi-Fi"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/13-inch-display-256gb-space-black-wifi-standard-glass",
+        "priceCurrency": "USD",
+        "price": 1499.0,
+        "sku": "MDYJ4LL/A",
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": 0,
+            "currency": "USD"
+          }
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "US",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 14,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        }
+      }
+    },
+    {
+      "@type": "Product",
+      "sku": "MDWM4LL/A",
+      "name": "11-inch iPad Pro Wi‑Fi 512GB with standard glass - Space Black",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "storage_capacity",
+          "name": "Storage",
+          "value": "512GB"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "size",
+          "name": "Screen Size",
+          "value": "11-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "display_type",
+          "name": "Display Glass",
+          "value": "Standard glass"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "color",
+          "name": "Color",
+          "value": "Space Black"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "connectivity",
+          "name": "Connectivity",
+          "value": "Wi-Fi"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/11-inch-display-512gb-space-black-wifi-standard-glass",
+        "priceCurrency": "USD",
+        "price": 1399.0,
+        "sku": "MDWM4LL/A",
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": 0,
+            "currency": "USD"
+          }
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "US",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 14,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        }
+      }
+    },
+    {
+      "@type": "Product",
+      "sku": "ME8M4LL/A",
+      "name": "13-inch iPad Pro Wi‑Fi + Cellular 2TB with nano-texture glass - Space Black",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "storage_capacity",
+          "name": "Storage",
+          "value": "2TB"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "size",
+          "name": "Screen Size",
+          "value": "13-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "display_type",
+          "name": "Display Glass",
+          "value": "Nano-texture glass"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "color",
+          "name": "Color",
+          "value": "Space Black"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "connectivity",
+          "name": "Connectivity",
+          "value": "Wi-Fi + Cellular"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/13-inch-display-2tb-space-black-wifi-cellular-nano-texture-glass",
+        "priceCurrency": "USD",
+        "price": 2899.0,
+        "sku": "ME8M4LL/A",
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": 0,
+            "currency": "USD"
+          }
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "US",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 14,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        }
+      }
+    },
+    {
+      "@type": "Product",
+      "sku": "ME2W4LL/A",
+      "name": "11-inch iPad Pro Wi‑Fi + Cellular 1TB with nano-texture glass - Space Black",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "storage_capacity",
+          "name": "Storage",
+          "value": "1TB"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "size",
+          "name": "Screen Size",
+          "value": "11-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "display_type",
+          "name": "Display Glass",
+          "value": "Nano-texture glass"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "color",
+          "name": "Color",
+          "value": "Space Black"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "connectivity",
+          "name": "Connectivity",
+          "value": "Wi-Fi + Cellular"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/11-inch-display-1tb-space-black-wifi-cellular-nano-texture-glass",
+        "priceCurrency": "USD",
+        "price": 2099.0,
+        "sku": "ME2W4LL/A",
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": 0,
+            "currency": "USD"
+          }
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "US",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 14,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        }
+      }
+    },
+    {
+      "@type": "Product",
+      "sku": "ME2U4LL/A",
+      "name": "11-inch iPad Pro Wi‑Fi + Cellular 1TB with standard glass - Space Black",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "storage_capacity",
+          "name": "Storage",
+          "value": "1TB"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "size",
+          "name": "Screen Size",
+          "value": "11-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "display_type",
+          "name": "Display Glass",
+          "value": "Standard glass"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "color",
+          "name": "Color",
+          "value": "Space Black"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "connectivity",
+          "name": "Connectivity",
+          "value": "Wi-Fi + Cellular"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/11-inch-display-1tb-space-black-wifi-cellular-standard-glass",
+        "priceCurrency": "USD",
+        "price": 1999.0,
+        "sku": "ME2U4LL/A",
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": 0,
+            "currency": "USD"
+          }
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "US",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 14,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        }
+      }
+    },
+    {
+      "@type": "Product",
+      "sku": "ME7X4LL/A",
+      "name": "13-inch iPad Pro Wi‑Fi + Cellular 256GB with standard glass - Silver",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "storage_capacity",
+          "name": "Storage",
+          "value": "256GB"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "size",
+          "name": "Screen Size",
+          "value": "13-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "display_type",
+          "name": "Display Glass",
+          "value": "Standard glass"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "color",
+          "name": "Color",
+          "value": "Silver"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "connectivity",
+          "name": "Connectivity",
+          "value": "Wi-Fi + Cellular"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/13-inch-display-256gb-silver-wifi-cellular-standard-glass",
+        "priceCurrency": "USD",
+        "price": 1699.0,
+        "sku": "ME7X4LL/A",
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": 0,
+            "currency": "USD"
+          }
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "US",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 14,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        }
+      }
+    },
+    {
+      "@type": "Product",
+      "sku": "MDWP4LL/A",
+      "name": "11-inch iPad Pro Wi‑Fi 1TB with standard glass - Space Black",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "storage_capacity",
+          "name": "Storage",
+          "value": "1TB"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "size",
+          "name": "Screen Size",
+          "value": "11-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "display_type",
+          "name": "Display Glass",
+          "value": "Standard glass"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "color",
+          "name": "Color",
+          "value": "Space Black"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "connectivity",
+          "name": "Connectivity",
+          "value": "Wi-Fi"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/11-inch-display-1tb-space-black-wifi-standard-glass",
+        "priceCurrency": "USD",
+        "price": 1799.0,
+        "sku": "MDWP4LL/A",
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": 0,
+            "currency": "USD"
+          }
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "US",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 14,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        }
+      }
+    },
+    {
+      "@type": "Product",
+      "sku": "MDWK4LL/A",
+      "name": "11-inch iPad Pro Wi‑Fi 256GB with standard glass - Space Black",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "storage_capacity",
+          "name": "Storage",
+          "value": "256GB"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "size",
+          "name": "Screen Size",
+          "value": "11-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "display_type",
+          "name": "Display Glass",
+          "value": "Standard glass"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "color",
+          "name": "Color",
+          "value": "Space Black"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "connectivity",
+          "name": "Connectivity",
+          "value": "Wi-Fi"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/11-inch-display-256gb-space-black-wifi-standard-glass",
+        "priceCurrency": "USD",
+        "price": 1199.0,
+        "sku": "MDWK4LL/A",
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": 0,
+            "currency": "USD"
+          }
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "US",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 14,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        }
+      }
+    },
+    {
+      "@type": "Product",
+      "sku": "ME8K4LL/A",
+      "name": "13-inch iPad Pro Wi‑Fi + Cellular 2TB with standard glass - Silver",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "storage_capacity",
+          "name": "Storage",
+          "value": "2TB"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "size",
+          "name": "Screen Size",
+          "value": "13-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "display_type",
+          "name": "Display Glass",
+          "value": "Standard glass"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "color",
+          "name": "Color",
+          "value": "Silver"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "connectivity",
+          "name": "Connectivity",
+          "value": "Wi-Fi + Cellular"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/13-inch-display-2tb-silver-wifi-cellular-standard-glass",
+        "priceCurrency": "USD",
+        "price": 2799.0,
+        "sku": "ME8K4LL/A",
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": 0,
+            "currency": "USD"
+          }
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "US",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 14,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        }
+      }
+    },
+    {
+      "@type": "Product",
+      "sku": "MDWN4LL/A",
+      "name": "11-inch iPad Pro Wi‑Fi 512GB with standard glass - Silver",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "storage_capacity",
+          "name": "Storage",
+          "value": "512GB"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "size",
+          "name": "Screen Size",
+          "value": "11-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "display_type",
+          "name": "Display Glass",
+          "value": "Standard glass"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "color",
+          "name": "Color",
+          "value": "Silver"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "connectivity",
+          "name": "Connectivity",
+          "value": "Wi-Fi"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/11-inch-display-512gb-silver-wifi-standard-glass",
+        "priceCurrency": "USD",
+        "price": 1399.0,
+        "sku": "MDWN4LL/A",
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": 0,
+            "currency": "USD"
+          }
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "US",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 14,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        }
+      }
+    },
+    {
+      "@type": "Product",
+      "sku": "ME8N4LL/A",
+      "name": "13-inch iPad Pro Wi‑Fi + Cellular 2TB with nano-texture glass - Silver",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "storage_capacity",
+          "name": "Storage",
+          "value": "2TB"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "size",
+          "name": "Screen Size",
+          "value": "13-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "display_type",
+          "name": "Display Glass",
+          "value": "Nano-texture glass"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "color",
+          "name": "Color",
+          "value": "Silver"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "connectivity",
+          "name": "Connectivity",
+          "value": "Wi-Fi + Cellular"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/13-inch-display-2tb-silver-wifi-cellular-nano-texture-glass",
+        "priceCurrency": "USD",
+        "price": 2899.0,
+        "sku": "ME8N4LL/A",
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": 0,
+            "currency": "USD"
+          }
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "US",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 14,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        }
+      }
+    },
+    {
+      "@type": "Product",
+      "sku": "MDYL4LL/A",
+      "name": "13-inch iPad Pro Wi‑Fi 512GB with standard glass - Space Black",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "storage_capacity",
+          "name": "Storage",
+          "value": "512GB"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "size",
+          "name": "Screen Size",
+          "value": "13-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "display_type",
+          "name": "Display Glass",
+          "value": "Standard glass"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "color",
+          "name": "Color",
+          "value": "Space Black"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "connectivity",
+          "name": "Connectivity",
+          "value": "Wi-Fi"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/13-inch-display-512gb-space-black-wifi-standard-glass",
+        "priceCurrency": "USD",
+        "price": 1699.0,
+        "sku": "MDYL4LL/A",
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": 0,
+            "currency": "USD"
+          }
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "US",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 14,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        }
+      }
+    },
+    {
+      "@type": "Product",
+      "sku": "ME6D4LL/A",
+      "name": "11-inch iPad Pro Wi‑Fi + Cellular 2TB with nano-texture glass - Silver",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "storage_capacity",
+          "name": "Storage",
+          "value": "2TB"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "size",
+          "name": "Screen Size",
+          "value": "11-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "display_type",
+          "name": "Display Glass",
+          "value": "Nano-texture glass"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "color",
+          "name": "Color",
+          "value": "Silver"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "connectivity",
+          "name": "Connectivity",
+          "value": "Wi-Fi + Cellular"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/11-inch-display-2tb-silver-wifi-cellular-nano-texture-glass",
+        "priceCurrency": "USD",
+        "price": 2599.0,
+        "sku": "ME6D4LL/A",
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": 0,
+            "currency": "USD"
+          }
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "US",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 14,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        }
+      }
+    },
+    {
+      "@type": "Product",
+      "sku": "MDWQ4LL/A",
+      "name": "11-inch iPad Pro Wi‑Fi 1TB with standard glass - Silver",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "storage_capacity",
+          "name": "Storage",
+          "value": "1TB"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "size",
+          "name": "Screen Size",
+          "value": "11-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "display_type",
+          "name": "Display Glass",
+          "value": "Standard glass"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "color",
+          "name": "Color",
+          "value": "Silver"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "connectivity",
+          "name": "Connectivity",
+          "value": "Wi-Fi"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/11-inch-display-1tb-silver-wifi-standard-glass",
+        "priceCurrency": "USD",
+        "price": 1799.0,
+        "sku": "MDWQ4LL/A",
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": 0,
+            "currency": "USD"
+          }
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "US",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 14,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        }
+      }
+    },
+    {
+      "@type": "Product",
+      "sku": "MDYV4LL/A",
+      "name": "13-inch iPad Pro Wi‑Fi 2TB with nano-texture glass - Space Black",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "storage_capacity",
+          "name": "Storage",
+          "value": "2TB"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "size",
+          "name": "Screen Size",
+          "value": "13-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "display_type",
+          "name": "Display Glass",
+          "value": "Nano-texture glass"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "color",
+          "name": "Color",
+          "value": "Space Black"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "connectivity",
+          "name": "Connectivity",
+          "value": "Wi-Fi"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/13-inch-display-2tb-space-black-wifi-nano-texture-glass",
+        "priceCurrency": "USD",
+        "price": 2699.0,
+        "sku": "MDYV4LL/A",
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": 0,
+            "currency": "USD"
+          }
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "US",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 14,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        }
+      }
+    },
+    {
+      "@type": "Product",
+      "sku": "MDYP4LL/A",
+      "name": "13-inch iPad Pro Wi‑Fi 1TB with standard glass - Silver",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "storage_capacity",
+          "name": "Storage",
+          "value": "1TB"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "size",
+          "name": "Screen Size",
+          "value": "13-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "display_type",
+          "name": "Display Glass",
+          "value": "Standard glass"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "color",
+          "name": "Color",
+          "value": "Silver"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "connectivity",
+          "name": "Connectivity",
+          "value": "Wi-Fi"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/13-inch-display-1tb-silver-wifi-standard-glass",
+        "priceCurrency": "USD",
+        "price": 2099.0,
+        "sku": "MDYP4LL/A",
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": 0,
+            "currency": "USD"
+          }
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "US",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 14,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        }
+      }
+    },
+    {
+      "@type": "Product",
+      "sku": "ME6A4LL/A",
+      "name": "11-inch iPad Pro Wi‑Fi + Cellular 2TB with standard glass - Silver",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "storage_capacity",
+          "name": "Storage",
+          "value": "2TB"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "size",
+          "name": "Screen Size",
+          "value": "11-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "display_type",
+          "name": "Display Glass",
+          "value": "Standard glass"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "color",
+          "name": "Color",
+          "value": "Silver"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "connectivity",
+          "name": "Connectivity",
+          "value": "Wi-Fi + Cellular"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/11-inch-display-2tb-silver-wifi-cellular-standard-glass",
+        "priceCurrency": "USD",
+        "price": 2499.0,
+        "sku": "ME6A4LL/A",
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": 0,
+            "currency": "USD"
+          }
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "US",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 14,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        }
+      }
+    },
+    {
+      "@type": "Product",
+      "sku": "ME8D4LL/A",
+      "name": "13-inch iPad Pro Wi‑Fi + Cellular 1TB with standard glass - Space Black",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "storage_capacity",
+          "name": "Storage",
+          "value": "1TB"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "size",
+          "name": "Screen Size",
+          "value": "13-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "display_type",
+          "name": "Display Glass",
+          "value": "Standard glass"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "color",
+          "name": "Color",
+          "value": "Space Black"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "connectivity",
+          "name": "Connectivity",
+          "value": "Wi-Fi + Cellular"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/13-inch-display-1tb-space-black-wifi-cellular-standard-glass",
+        "priceCurrency": "USD",
+        "price": 2299.0,
+        "sku": "ME8D4LL/A",
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": 0,
+            "currency": "USD"
+          }
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "US",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 14,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        }
+      }
+    },
+    {
+      "@type": "Product",
+      "sku": "ME8J4LL/A",
+      "name": "13-inch iPad Pro Wi‑Fi + Cellular 2TB with standard glass - Space Black",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "storage_capacity",
+          "name": "Storage",
+          "value": "2TB"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "size",
+          "name": "Screen Size",
+          "value": "13-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "display_type",
+          "name": "Display Glass",
+          "value": "Standard glass"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "color",
+          "name": "Color",
+          "value": "Space Black"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "connectivity",
+          "name": "Connectivity",
+          "value": "Wi-Fi + Cellular"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/13-inch-display-2tb-space-black-wifi-cellular-standard-glass",
+        "priceCurrency": "USD",
+        "price": 2799.0,
+        "sku": "ME8J4LL/A",
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": 0,
+            "currency": "USD"
+          }
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "US",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 14,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        }
+      }
+    },
+    {
+      "@type": "Product",
+      "sku": "MDWT4LL/A",
+      "name": "11-inch iPad Pro Wi‑Fi 1TB with nano-texture glass - Silver",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "storage_capacity",
+          "name": "Storage",
+          "value": "1TB"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "size",
+          "name": "Screen Size",
+          "value": "11-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "display_type",
+          "name": "Display Glass",
+          "value": "Nano-texture glass"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "color",
+          "name": "Color",
+          "value": "Silver"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "connectivity",
+          "name": "Connectivity",
+          "value": "Wi-Fi"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/11-inch-display-1tb-silver-wifi-nano-texture-glass",
+        "priceCurrency": "USD",
+        "price": 1899.0,
+        "sku": "MDWT4LL/A",
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": 0,
+            "currency": "USD"
+          }
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "US",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 14,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        }
+      }
+    },
+    {
+      "@type": "Product",
+      "sku": "MDWW4LL/A",
+      "name": "11-inch iPad Pro Wi‑Fi 2TB with nano-texture glass - Space Black",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "storage_capacity",
+          "name": "Storage",
+          "value": "2TB"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "size",
+          "name": "Screen Size",
+          "value": "11-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "display_type",
+          "name": "Display Glass",
+          "value": "Nano-texture glass"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "color",
+          "name": "Color",
+          "value": "Space Black"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "connectivity",
+          "name": "Connectivity",
+          "value": "Wi-Fi"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/11-inch-display-2tb-space-black-wifi-nano-texture-glass",
+        "priceCurrency": "USD",
+        "price": 2399.0,
+        "sku": "MDWW4LL/A",
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": 0,
+            "currency": "USD"
+          }
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "US",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 14,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        }
+      }
+    },
+    {
+      "@type": "Product",
+      "sku": "ME7Y4LL/A",
+      "name": "13-inch iPad Pro Wi‑Fi + Cellular 512GB with standard glass - Space Black",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "storage_capacity",
+          "name": "Storage",
+          "value": "512GB"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "size",
+          "name": "Screen Size",
+          "value": "13-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "display_type",
+          "name": "Display Glass",
+          "value": "Standard glass"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "color",
+          "name": "Color",
+          "value": "Space Black"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "connectivity",
+          "name": "Connectivity",
+          "value": "Wi-Fi + Cellular"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/13-inch-display-512gb-space-black-wifi-cellular-standard-glass",
+        "priceCurrency": "USD",
+        "price": 1899.0,
+        "sku": "ME7Y4LL/A",
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": 0,
+            "currency": "USD"
+          }
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "US",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 14,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        }
+      }
+    },
+    {
+      "@type": "Product",
+      "sku": "ME8G4LL/A",
+      "name": "13-inch iPad Pro Wi‑Fi + Cellular 1TB with nano-texture glass - Space Black",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "storage_capacity",
+          "name": "Storage",
+          "value": "1TB"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "size",
+          "name": "Screen Size",
+          "value": "13-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "display_type",
+          "name": "Display Glass",
+          "value": "Nano-texture glass"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "color",
+          "name": "Color",
+          "value": "Space Black"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "connectivity",
+          "name": "Connectivity",
+          "value": "Wi-Fi + Cellular"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/13-inch-display-1tb-space-black-wifi-cellular-nano-texture-glass",
+        "priceCurrency": "USD",
+        "price": 2399.0,
+        "sku": "ME8G4LL/A",
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": 0,
+            "currency": "USD"
+          }
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "US",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 14,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        }
+      }
+    },
+    {
+      "@type": "Product",
+      "sku": "ME2V4LL/A",
+      "name": "11-inch iPad Pro Wi‑Fi + Cellular 1TB with standard glass - Silver",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "storage_capacity",
+          "name": "Storage",
+          "value": "1TB"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "size",
+          "name": "Screen Size",
+          "value": "11-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "display_type",
+          "name": "Display Glass",
+          "value": "Standard glass"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "color",
+          "name": "Color",
+          "value": "Silver"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "connectivity",
+          "name": "Connectivity",
+          "value": "Wi-Fi + Cellular"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/11-inch-display-1tb-silver-wifi-cellular-standard-glass",
+        "priceCurrency": "USD",
+        "price": 1999.0,
+        "sku": "ME2V4LL/A",
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": 0,
+            "currency": "USD"
+          }
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "US",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 14,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        }
+      }
+    },
+    {
+      "@type": "Product",
+      "sku": "ME8C4LL/A",
+      "name": "13-inch iPad Pro Wi‑Fi + Cellular 512GB with standard glass - Silver",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "storage_capacity",
+          "name": "Storage",
+          "value": "512GB"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "size",
+          "name": "Screen Size",
+          "value": "13-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "display_type",
+          "name": "Display Glass",
+          "value": "Standard glass"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "color",
+          "name": "Color",
+          "value": "Silver"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "connectivity",
+          "name": "Connectivity",
+          "value": "Wi-Fi + Cellular"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/13-inch-display-512gb-silver-wifi-cellular-standard-glass",
+        "priceCurrency": "USD",
+        "price": 1899.0,
+        "sku": "ME8C4LL/A",
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": 0,
+            "currency": "USD"
+          }
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "US",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 14,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        }
+      }
+    },
+    {
+      "@type": "Product",
+      "sku": "ME2Y4LL/A",
+      "name": "11-inch iPad Pro Wi‑Fi + Cellular 2TB with standard glass - Space Black",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "storage_capacity",
+          "name": "Storage",
+          "value": "2TB"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "size",
+          "name": "Screen Size",
+          "value": "11-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "display_type",
+          "name": "Display Glass",
+          "value": "Standard glass"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "color",
+          "name": "Color",
+          "value": "Space Black"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "connectivity",
+          "name": "Connectivity",
+          "value": "Wi-Fi + Cellular"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/11-inch-display-2tb-space-black-wifi-cellular-standard-glass",
+        "priceCurrency": "USD",
+        "price": 2499.0,
+        "sku": "ME2Y4LL/A",
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": 0,
+            "currency": "USD"
+          }
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "US",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 14,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        }
+      }
+    },
+    {
+      "@type": "Product",
+      "sku": "ME8F4LL/A",
+      "name": "13-inch iPad Pro Wi‑Fi + Cellular 1TB with standard glass - Silver",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "storage_capacity",
+          "name": "Storage",
+          "value": "1TB"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "size",
+          "name": "Screen Size",
+          "value": "13-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "display_type",
+          "name": "Display Glass",
+          "value": "Standard glass"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "color",
+          "name": "Color",
+          "value": "Silver"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "connectivity",
+          "name": "Connectivity",
+          "value": "Wi-Fi + Cellular"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/13-inch-display-1tb-silver-wifi-cellular-standard-glass",
+        "priceCurrency": "USD",
+        "price": 2299.0,
+        "sku": "ME8F4LL/A",
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": 0,
+            "currency": "USD"
+          }
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "US",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 14,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        }
+      }
+    },
+    {
+      "@type": "Product",
+      "sku": "MDYW4LL/A",
+      "name": "13-inch iPad Pro Wi‑Fi 2TB with nano-texture glass - Silver",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "storage_capacity",
+          "name": "Storage",
+          "value": "2TB"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "size",
+          "name": "Screen Size",
+          "value": "13-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "display_type",
+          "name": "Display Glass",
+          "value": "Nano-texture glass"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "color",
+          "name": "Color",
+          "value": "Silver"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "connectivity",
+          "name": "Connectivity",
+          "value": "Wi-Fi"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/13-inch-display-2tb-silver-wifi-nano-texture-glass",
+        "priceCurrency": "USD",
+        "price": 2699.0,
+        "sku": "MDYW4LL/A",
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": 0,
+            "currency": "USD"
+          }
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "US",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 14,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        }
+      }
+    },
+    {
+      "@type": "Product",
+      "sku": "MDYQ4LL/A",
+      "name": "13-inch iPad Pro Wi‑Fi 1TB with nano-texture glass - Space Black",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "storage_capacity",
+          "name": "Storage",
+          "value": "1TB"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "size",
+          "name": "Screen Size",
+          "value": "13-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "display_type",
+          "name": "Display Glass",
+          "value": "Nano-texture glass"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "color",
+          "name": "Color",
+          "value": "Space Black"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "connectivity",
+          "name": "Connectivity",
+          "value": "Wi-Fi"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/13-inch-display-1tb-space-black-wifi-nano-texture-glass",
+        "priceCurrency": "USD",
+        "price": 2199.0,
+        "sku": "MDYQ4LL/A",
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": 0,
+            "currency": "USD"
+          }
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "US",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 14,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        }
+      }
+    },
+    {
+      "@type": "Product",
+      "sku": "MDYN4LL/A",
+      "name": "13-inch iPad Pro Wi‑Fi 1TB with standard glass - Space Black",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "storage_capacity",
+          "name": "Storage",
+          "value": "1TB"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "size",
+          "name": "Screen Size",
+          "value": "13-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "display_type",
+          "name": "Display Glass",
+          "value": "Standard glass"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "color",
+          "name": "Color",
+          "value": "Space Black"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "connectivity",
+          "name": "Connectivity",
+          "value": "Wi-Fi"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/13-inch-display-1tb-space-black-wifi-standard-glass",
+        "priceCurrency": "USD",
+        "price": 2099.0,
+        "sku": "MDYN4LL/A",
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": 0,
+            "currency": "USD"
+          }
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "US",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 14,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        }
+      }
+    },
+    {
+      "@type": "Product",
+      "sku": "ME2P4LL/A",
+      "name": "11-inch iPad Pro Wi‑Fi + Cellular 256GB with standard glass - Silver",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "storage_capacity",
+          "name": "Storage",
+          "value": "256GB"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "size",
+          "name": "Screen Size",
+          "value": "11-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "display_type",
+          "name": "Display Glass",
+          "value": "Standard glass"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "color",
+          "name": "Color",
+          "value": "Silver"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "connectivity",
+          "name": "Connectivity",
+          "value": "Wi-Fi + Cellular"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/11-inch-display-256gb-silver-wifi-cellular-standard-glass",
+        "priceCurrency": "USD",
+        "price": 1399.0,
+        "sku": "ME2P4LL/A",
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": 0,
+            "currency": "USD"
+          }
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "US",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 14,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        }
+      }
+    },
+    {
+      "@type": "Product",
+      "sku": "MDWU4LL/A",
+      "name": "11-inch iPad Pro Wi‑Fi 2TB with standard glass - Space Black",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "storage_capacity",
+          "name": "Storage",
+          "value": "2TB"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "size",
+          "name": "Screen Size",
+          "value": "11-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "display_type",
+          "name": "Display Glass",
+          "value": "Standard glass"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "color",
+          "name": "Color",
+          "value": "Space Black"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "connectivity",
+          "name": "Connectivity",
+          "value": "Wi-Fi"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/11-inch-display-2tb-space-black-wifi-standard-glass",
+        "priceCurrency": "USD",
+        "price": 2299.0,
+        "sku": "MDWU4LL/A",
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": 0,
+            "currency": "USD"
+          }
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "US",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 14,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        }
+      }
+    },
+    {
+      "@type": "Product",
+      "sku": "MDWX4LL/A",
+      "name": "11-inch iPad Pro Wi‑Fi 2TB with nano-texture glass - Silver",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "storage_capacity",
+          "name": "Storage",
+          "value": "2TB"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "size",
+          "name": "Screen Size",
+          "value": "11-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "display_type",
+          "name": "Display Glass",
+          "value": "Nano-texture glass"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "color",
+          "name": "Color",
+          "value": "Silver"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "connectivity",
+          "name": "Connectivity",
+          "value": "Wi-Fi"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/11-inch-display-2tb-silver-wifi-nano-texture-glass",
+        "priceCurrency": "USD",
+        "price": 2399.0,
+        "sku": "MDWX4LL/A",
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": 0,
+            "currency": "USD"
+          }
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "US",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 14,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        }
+      }
+    },
+    {
+      "@type": "Product",
+      "sku": "MDYT4LL/A",
+      "name": "13-inch iPad Pro Wi‑Fi 2TB with standard glass - Space Black",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "storage_capacity",
+          "name": "Storage",
+          "value": "2TB"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "size",
+          "name": "Screen Size",
+          "value": "13-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "display_type",
+          "name": "Display Glass",
+          "value": "Standard glass"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "color",
+          "name": "Color",
+          "value": "Space Black"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "connectivity",
+          "name": "Connectivity",
+          "value": "Wi-Fi"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/13-inch-display-2tb-space-black-wifi-standard-glass",
+        "priceCurrency": "USD",
+        "price": 2599.0,
+        "sku": "MDYT4LL/A",
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": 0,
+            "currency": "USD"
+          }
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "US",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 14,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        }
+      }
+    },
+    {
+      "@type": "Product",
+      "sku": "ME7W4LL/A",
+      "name": "13-inch iPad Pro Wi‑Fi + Cellular 256GB with standard glass - Space Black",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "storage_capacity",
+          "name": "Storage",
+          "value": "256GB"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "size",
+          "name": "Screen Size",
+          "value": "13-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "display_type",
+          "name": "Display Glass",
+          "value": "Standard glass"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "color",
+          "name": "Color",
+          "value": "Space Black"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "connectivity",
+          "name": "Connectivity",
+          "value": "Wi-Fi + Cellular"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/13-inch-display-256gb-space-black-wifi-cellular-standard-glass",
+        "priceCurrency": "USD",
+        "price": 1699.0,
+        "sku": "ME7W4LL/A",
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": 0,
+            "currency": "USD"
+          }
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "US",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 14,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        }
+      }
+    },
+    {
+      "@type": "Product",
+      "sku": "ME2Q4LL/A",
+      "name": "11-inch iPad Pro Wi‑Fi + Cellular 512GB with standard glass - Space Black",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "storage_capacity",
+          "name": "Storage",
+          "value": "512GB"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "size",
+          "name": "Screen Size",
+          "value": "11-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "display_type",
+          "name": "Display Glass",
+          "value": "Standard glass"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "color",
+          "name": "Color",
+          "value": "Space Black"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "connectivity",
+          "name": "Connectivity",
+          "value": "Wi-Fi + Cellular"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/11-inch-display-512gb-space-black-wifi-cellular-standard-glass",
+        "priceCurrency": "USD",
+        "price": 1599.0,
+        "sku": "ME2Q4LL/A",
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": 0,
+            "currency": "USD"
+          }
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "US",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 14,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        }
+      }
+    },
+    {
+      "@type": "Product",
+      "sku": "ME8H4LL/A",
+      "name": "13-inch iPad Pro Wi‑Fi + Cellular 1TB with nano-texture glass - Silver",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "storage_capacity",
+          "name": "Storage",
+          "value": "1TB"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "size",
+          "name": "Screen Size",
+          "value": "13-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "display_type",
+          "name": "Display Glass",
+          "value": "Nano-texture glass"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "color",
+          "name": "Color",
+          "value": "Silver"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "connectivity",
+          "name": "Connectivity",
+          "value": "Wi-Fi + Cellular"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/13-inch-display-1tb-silver-wifi-cellular-nano-texture-glass",
+        "priceCurrency": "USD",
+        "price": 2399.0,
+        "sku": "ME8H4LL/A",
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": 0,
+            "currency": "USD"
+          }
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "US",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 14,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        }
+      }
+    },
+    {
+      "@type": "Product",
+      "sku": "ME2T4LL/A",
+      "name": "11-inch iPad Pro Wi‑Fi + Cellular 512GB with standard glass - Silver",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "storage_capacity",
+          "name": "Storage",
+          "value": "512GB"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "size",
+          "name": "Screen Size",
+          "value": "11-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "display_type",
+          "name": "Display Glass",
+          "value": "Standard glass"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "color",
+          "name": "Color",
+          "value": "Silver"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "connectivity",
+          "name": "Connectivity",
+          "value": "Wi-Fi + Cellular"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/11-inch-display-512gb-silver-wifi-cellular-standard-glass",
+        "priceCurrency": "USD",
+        "price": 1599.0,
+        "sku": "ME2T4LL/A",
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": 0,
+            "currency": "USD"
+          }
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "US",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 14,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        }
+      }
+    },
+    {
+      "@type": "Product",
+      "sku": "MDYU4LL/A",
+      "name": "13-inch iPad Pro Wi‑Fi 2TB with standard glass - Silver",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "storage_capacity",
+          "name": "Storage",
+          "value": "2TB"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "size",
+          "name": "Screen Size",
+          "value": "13-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "display_type",
+          "name": "Display Glass",
+          "value": "Standard glass"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "color",
+          "name": "Color",
+          "value": "Silver"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "connectivity",
+          "name": "Connectivity",
+          "value": "Wi-Fi"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/13-inch-display-2tb-silver-wifi-standard-glass",
+        "priceCurrency": "USD",
+        "price": 2599.0,
+        "sku": "MDYU4LL/A",
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": 0,
+            "currency": "USD"
+          }
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "US",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 14,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        }
+      }
+    },
+    {
+      "@type": "Product",
+      "sku": "ME2X4LL/A",
+      "name": "11-inch iPad Pro Wi‑Fi + Cellular 1TB with nano-texture glass - Silver",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "storage_capacity",
+          "name": "Storage",
+          "value": "1TB"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "size",
+          "name": "Screen Size",
+          "value": "11-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "display_type",
+          "name": "Display Glass",
+          "value": "Nano-texture glass"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "color",
+          "name": "Color",
+          "value": "Silver"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "connectivity",
+          "name": "Connectivity",
+          "value": "Wi-Fi + Cellular"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/11-inch-display-1tb-silver-wifi-cellular-nano-texture-glass",
+        "priceCurrency": "USD",
+        "price": 2099.0,
+        "sku": "ME2X4LL/A",
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": 0,
+            "currency": "USD"
+          }
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "US",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 14,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        }
+      }
+    },
+    {
+      "@type": "Product",
+      "sku": "MDYR4LL/A",
+      "name": "13-inch iPad Pro Wi‑Fi 1TB with nano-texture glass - Silver",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "storage_capacity",
+          "name": "Storage",
+          "value": "1TB"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "size",
+          "name": "Screen Size",
+          "value": "13-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "display_type",
+          "name": "Display Glass",
+          "value": "Nano-texture glass"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "color",
+          "name": "Color",
+          "value": "Silver"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "connectivity",
+          "name": "Connectivity",
+          "value": "Wi-Fi"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/13-inch-display-1tb-silver-wifi-nano-texture-glass",
+        "priceCurrency": "USD",
+        "price": 2199.0,
+        "sku": "MDYR4LL/A",
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": 0,
+            "currency": "USD"
+          }
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "US",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 14,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        }
+      }
+    },
+    {
+      "@type": "Product",
+      "sku": "MDWR4LL/A",
+      "name": "11-inch iPad Pro Wi‑Fi 1TB with nano-texture glass - Space Black",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "storage_capacity",
+          "name": "Storage",
+          "value": "1TB"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "size",
+          "name": "Screen Size",
+          "value": "11-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "display_type",
+          "name": "Display Glass",
+          "value": "Nano-texture glass"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "color",
+          "name": "Color",
+          "value": "Space Black"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "connectivity",
+          "name": "Connectivity",
+          "value": "Wi-Fi"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/11-inch-display-1tb-space-black-wifi-nano-texture-glass",
+        "priceCurrency": "USD",
+        "price": 1899.0,
+        "sku": "MDWR4LL/A",
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": 0,
+            "currency": "USD"
+          }
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "US",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 14,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        }
+      }
+    },
+    {
+      "@type": "Product",
+      "sku": "MDYK4LL/A",
+      "name": "13-inch iPad Pro Wi‑Fi 256GB with standard glass - Silver",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "storage_capacity",
+          "name": "Storage",
+          "value": "256GB"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "size",
+          "name": "Screen Size",
+          "value": "13-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "display_type",
+          "name": "Display Glass",
+          "value": "Standard glass"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "color",
+          "name": "Color",
+          "value": "Silver"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "connectivity",
+          "name": "Connectivity",
+          "value": "Wi-Fi"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/13-inch-display-256gb-silver-wifi-standard-glass",
+        "priceCurrency": "USD",
+        "price": 1499.0,
+        "sku": "MDYK4LL/A",
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": 0,
+            "currency": "USD"
+          }
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "US",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 14,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        }
+      }
+    },
+    {
+      "@type": "Product",
+      "sku": "ME6C4LL/A",
+      "name": "11-inch iPad Pro Wi‑Fi + Cellular 2TB with nano-texture glass - Space Black",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "storage_capacity",
+          "name": "Storage",
+          "value": "2TB"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "size",
+          "name": "Screen Size",
+          "value": "11-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "display_type",
+          "name": "Display Glass",
+          "value": "Nano-texture glass"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "color",
+          "name": "Color",
+          "value": "Space Black"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "connectivity",
+          "name": "Connectivity",
+          "value": "Wi-Fi + Cellular"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/11-inch-display-2tb-space-black-wifi-cellular-nano-texture-glass",
+        "priceCurrency": "USD",
+        "price": 2599.0,
+        "sku": "ME6C4LL/A",
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": 0,
+            "currency": "USD"
+          }
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "US",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 14,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        }
+      }
+    },
+    {
+      "@type": "Product",
+      "sku": "MDWL4LL/A",
+      "name": "11-inch iPad Pro Wi‑Fi 256GB with standard glass - Silver",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "storage_capacity",
+          "name": "Storage",
+          "value": "256GB"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "size",
+          "name": "Screen Size",
+          "value": "11-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "display_type",
+          "name": "Display Glass",
+          "value": "Standard glass"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "color",
+          "name": "Color",
+          "value": "Silver"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "connectivity",
+          "name": "Connectivity",
+          "value": "Wi-Fi"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/11-inch-display-256gb-silver-wifi-standard-glass",
+        "priceCurrency": "USD",
+        "price": 1199.0,
+        "sku": "MDWL4LL/A",
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": 0,
+            "currency": "USD"
+          }
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "US",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 14,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        }
+      }
+    },
+    {
+      "@type": "Product",
+      "sku": "ME2N4LL/A",
+      "name": "11-inch iPad Pro Wi‑Fi + Cellular 256GB with standard glass - Space Black",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "storage_capacity",
+          "name": "Storage",
+          "value": "256GB"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "size",
+          "name": "Screen Size",
+          "value": "11-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "display_type",
+          "name": "Display Glass",
+          "value": "Standard glass"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "color",
+          "name": "Color",
+          "value": "Space Black"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "connectivity",
+          "name": "Connectivity",
+          "value": "Wi-Fi + Cellular"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/11-inch-display-256gb-space-black-wifi-cellular-standard-glass",
+        "priceCurrency": "USD",
+        "price": 1399.0,
+        "sku": "ME2N4LL/A",
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": 0,
+            "currency": "USD"
+          }
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "US",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 14,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        }
+      }
+    }
+  ]
+}

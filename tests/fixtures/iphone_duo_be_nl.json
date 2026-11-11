@@ -1,0 +1,118 @@
+{
+  "products": [
+    {
+      "partNumber": "MK2H4ZD/A",
+      "dimensionSteporder": null,
+      "fullPrice": "mk2h4zd_a",
+      "dimensionCapacity": "1tb",
+      "dimensionColor": "starwhite"
+    },
+    {
+      "partNumber": "MK2J4ZD/A",
+      "dimensionSteporder": null,
+      "fullPrice": "mk2j4zd_a",
+      "dimensionCapacity": "1tb",
+      "dimensionColor": "nightsky"
+    },
+    {
+      "partNumber": "MK2F4ZD/A",
+      "dimensionSteporder": null,
+      "fullPrice": "mk2f4zd_a",
+      "dimensionCapacity": "512gb",
+      "dimensionColor": "starwhite"
+    },
+    {
+      "partNumber": "MK2G4ZD/A",
+      "dimensionSteporder": null,
+      "fullPrice": "mk2g4zd_a",
+      "dimensionCapacity": "512gb",
+      "dimensionColor": "nightsky"
+    },
+    {
+      "partNumber": "MK2D4ZD/A",
+      "dimensionSteporder": null,
+      "fullPrice": "mk2d4zd_a",
+      "dimensionCapacity": "256gb",
+      "dimensionColor": "starwhite"
+    },
+    {
+      "partNumber": "MK2E4ZD/A",
+      "dimensionSteporder": null,
+      "fullPrice": "mk2e4zd_a",
+      "dimensionCapacity": "256gb",
+      "dimensionColor": "nightsky"
+    },
+    {
+      "partNumber": "MK2K4ZD/A",
+      "dimensionSteporder": null,
+      "fullPrice": "mk2k4zd_a",
+      "dimensionCapacity": "2tb",
+      "dimensionColor": "starwhite"
+    },
+    {
+      "partNumber": "MK2L4ZD/A",
+      "dimensionSteporder": null,
+      "fullPrice": "mk2l4zd_a",
+      "dimensionCapacity": "2tb",
+      "dimensionColor": "nightsky"
+    }
+  ],
+  "displayValues": {
+    "dimensionColor": {
+      "starwhite": {
+        "value": "Sterrenwit"
+      },
+      "nightsky": {
+        "value": "Nachthemel"
+      }
+    },
+    "dimensionCapacity": {
+      "256gb": {
+        "value": "256 <small>GB</small><as-footnote data-id=\"6c341d797a26c8d39cc2f0a6925a8d4e\" data-assigned=\"true\"><sup data-autom=\"footnote-sub\" class=\"as-footnote\"><span class=\"visuallyhidden\">&nbsp;Voetnoot&nbsp;</span>1</sup></as-footnote>"
+      },
+      "512gb": {
+        "value": "512 <small>GB</small><as-footnote data-id=\"6c341d797a26c8d39cc2f0a6925a8d4e\" data-assigned=\"true\"><sup data-autom=\"footnote-sub\" class=\"as-footnote\"><span class=\"visuallyhidden\">&nbsp;Voetnoot&nbsp;</span>1</sup></as-footnote>"
+      },
+      "1tb": {
+        "value": "1&nbsp;<small>TB</small><as-footnote data-id=\"6c341d797a26c8d39cc2f0a6925a8d4e\" data-assigned=\"true\"><sup data-autom=\"footnote-sub\" class=\"as-footnote\"><span class=\"visuallyhidden\">&nbsp;Voetnoot&nbsp;</span>1</sup></as-footnote>\n"
+      },
+      "2tb": {
+        "value": "2&nbsp;<small>TB</small><as-footnote data-id=\"6c341d797a26c8d39cc2f0a6925a8d4e\" data-assigned=\"true\"><sup data-autom=\"footnote-sub\" class=\"as-footnote\"><span class=\"visuallyhidden\">&nbsp;Voetnoot&nbsp;</span>1</sup></as-footnote>"
+      }
+    },
+    "prices": {
+      "mk2l4zd_a": {
+        "amountBeforeTradeIn": 3839.0,
+        "priceCurrency": "EUR"
+      },
+      "mk2f4zd_a": {
+        "amountBeforeTradeIn": 2589.0,
+        "priceCurrency": "EUR"
+      },
+      "mk2d4zd_a": {
+        "amountBeforeTradeIn": 2339.0,
+        "priceCurrency": "EUR"
+      },
+      "mk2e4zd_a": {
+        "amountBeforeTradeIn": 2339.0,
+        "priceCurrency": "EUR"
+      },
+      "mk2h4zd_a": {
+        "amountBeforeTradeIn": 3089.0,
+        "priceCurrency": "EUR"
+      },
+      "mk2j4zd_a": {
+        "amountBeforeTradeIn": 3089.0,
+        "priceCurrency": "EUR"
+      },
+      "mk2g4zd_a": {
+        "amountBeforeTradeIn": 2589.0,
+        "priceCurrency": "EUR"
+      },
+      "mk2k4zd_a": {
+        "amountBeforeTradeIn": 3839.0,
+        "priceCurrency": "EUR"
+      }
+    }
+  }
+}

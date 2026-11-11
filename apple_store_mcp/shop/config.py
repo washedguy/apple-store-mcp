@@ -13,7 +13,7 @@ STOREFRONTS = {
     "cn": ("www.apple.com.cn", "CNY", ("zh",)),
     "kr": ("www.apple.com", "KRW", ("ko",)),
     "au": ("www.apple.com", "AUD", ("en",)),
-    "ca": ("www.apple.com", "CAD", ("en",)),
+    "ca": ("www.apple.com", "CAD", ("en", "fr")),
     "mx": ("www.apple.com", "MXN", ("es",)),
     "br": ("www.apple.com", "BRL", ("pt",)),
     "sg": ("www.apple.com", "SGD", ("en",)),
@@ -41,12 +41,16 @@ STOREFRONTS = {
 
 def path_prefix(country: str, language: str) -> str:
     """Return the URL path segment for search/shop pages, e.g. 'us', 'ch-de', 'be-fr'."""
+    if country == "ca" and language == "fr":
+        return "xf"
     if country in ("be", "ch"):
         return f"{country}-{language}"
     return country
 
 def site_prefix(country: str, language: str) -> str:
     """Return the URL path segment for marketing and store-list pages, e.g. 'us', 'chde', 'befr'."""
+    if country == "ca" and language == "fr":
+        return "ca/fr"
     if country in ("be", "ch"):
         return f"{country}{language}"
     return country

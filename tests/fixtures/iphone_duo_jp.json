@@ -1,0 +1,294 @@
+{
+  "products": [
+    {
+      "partNumber": "MK284J/A",
+      "dimensionSteporder": null,
+      "fullPrice": "mk284j_a_docomo_iphoneduo",
+      "dimensionCapacity": "1tb",
+      "dimensionColor": "starwhite"
+    },
+    {
+      "partNumber": "MK284J/A",
+      "dimensionSteporder": null,
+      "fullPrice": "mk284j_a_softbank_iphoneduo",
+      "dimensionCapacity": "1tb",
+      "dimensionColor": "starwhite"
+    },
+    {
+      "partNumber": "MK284J/A",
+      "dimensionSteporder": null,
+      "fullPrice": "mk284j_a_unlocked_jp",
+      "dimensionCapacity": "1tb",
+      "dimensionColor": "starwhite"
+    },
+    {
+      "partNumber": "MK294J/A",
+      "dimensionSteporder": null,
+      "fullPrice": "mk294j_a_docomo_iphoneduo",
+      "dimensionCapacity": "1tb",
+      "dimensionColor": "nightsky"
+    },
+    {
+      "partNumber": "MK294J/A",
+      "dimensionSteporder": null,
+      "fullPrice": "mk294j_a_softbank_iphoneduo",
+      "dimensionCapacity": "1tb",
+      "dimensionColor": "nightsky"
+    },
+    {
+      "partNumber": "MK294J/A",
+      "dimensionSteporder": null,
+      "fullPrice": "mk294j_a_unlocked_jp",
+      "dimensionCapacity": "1tb",
+      "dimensionColor": "nightsky"
+    },
+    {
+      "partNumber": "MK2A4J/A",
+      "dimensionSteporder": null,
+      "fullPrice": "mk2a4j_a_docomo_iphoneduo",
+      "dimensionCapacity": "2tb",
+      "dimensionColor": "starwhite"
+    },
+    {
+      "partNumber": "MK2A4J/A",
+      "dimensionSteporder": null,
+      "fullPrice": "mk2a4j_a_softbank_iphoneduo",
+      "dimensionCapacity": "2tb",
+      "dimensionColor": "starwhite"
+    },
+    {
+      "partNumber": "MK2A4J/A",
+      "dimensionSteporder": null,
+      "fullPrice": "mk2a4j_a_unlocked_jp",
+      "dimensionCapacity": "2tb",
+      "dimensionColor": "starwhite"
+    },
+    {
+      "partNumber": "MK264J/A",
+      "dimensionSteporder": null,
+      "fullPrice": "mk264j_a_docomo_iphoneduo",
+      "dimensionCapacity": "512gb",
+      "dimensionColor": "starwhite"
+    },
+    {
+      "partNumber": "MK264J/A",
+      "dimensionSteporder": null,
+      "fullPrice": "mk264j_a_softbank_iphoneduo",
+      "dimensionCapacity": "512gb",
+      "dimensionColor": "starwhite"
+    },
+    {
+      "partNumber": "MK264J/A",
+      "dimensionSteporder": null,
+      "fullPrice": "mk264j_a_unlocked_jp",
+      "dimensionCapacity": "512gb",
+      "dimensionColor": "starwhite"
+    },
+    {
+      "partNumber": "MK274J/A",
+      "dimensionSteporder": null,
+      "fullPrice": "mk274j_a_docomo_iphoneduo",
+      "dimensionCapacity": "512gb",
+      "dimensionColor": "nightsky"
+    },
+    {
+      "partNumber": "MK274J/A",
+      "dimensionSteporder": null,
+      "fullPrice": "mk274j_a_softbank_iphoneduo",
+      "dimensionCapacity": "512gb",
+      "dimensionColor": "nightsky"
+    },
+    {
+      "partNumber": "MK274J/A",
+      "dimensionSteporder": null,
+      "fullPrice": "mk274j_a_unlocked_jp",
+      "dimensionCapacity": "512gb",
+      "dimensionColor": "nightsky"
+    },
+    {
+      "partNumber": "MK244J/A",
+      "dimensionSteporder": null,
+      "fullPrice": "mk244j_a_docomo_iphoneduo",
+      "dimensionCapacity": "256gb",
+      "dimensionColor": "starwhite"
+    },
+    {
+      "partNumber": "MK244J/A",
+      "dimensionSteporder": null,
+      "fullPrice": "mk244j_a_softbank_iphoneduo",
+      "dimensionCapacity": "256gb",
+      "dimensionColor": "starwhite"
+    },
+    {
+      "partNumber": "MK244J/A",
+      "dimensionSteporder": null,
+      "fullPrice": "mk244j_a_unlocked_jp",
+      "dimensionCapacity": "256gb",
+      "dimensionColor": "starwhite"
+    },
+    {
+      "partNumber": "MK254J/A",
+      "dimensionSteporder": null,
+      "fullPrice": "mk254j_a_docomo_iphoneduo",
+      "dimensionCapacity": "256gb",
+      "dimensionColor": "nightsky"
+    },
+    {
+      "partNumber": "MK254J/A",
+      "dimensionSteporder": null,
+      "fullPrice": "mk254j_a_softbank_iphoneduo",
+      "dimensionCapacity": "256gb",
+      "dimensionColor": "nightsky"
+    },
+    {
+      "partNumber": "MK254J/A",
+      "dimensionSteporder": null,
+      "fullPrice": "mk254j_a_unlocked_jp",
+      "dimensionCapacity": "256gb",
+      "dimensionColor": "nightsky"
+    },
+    {
+      "partNumber": "MK2C4J/A",
+      "dimensionSteporder": null,
+      "fullPrice": "mk2c4j_a_docomo_iphoneduo",
+      "dimensionCapacity": "2tb",
+      "dimensionColor": "nightsky"
+    },
+    {
+      "partNumber": "MK2C4J/A",
+      "dimensionSteporder": null,
+      "fullPrice": "mk2c4j_a_softbank_iphoneduo",
+      "dimensionCapacity": "2tb",
+      "dimensionColor": "nightsky"
+    },
+    {
+      "partNumber": "MK2C4J/A",
+      "dimensionSteporder": null,
+      "fullPrice": "mk2c4j_a_unlocked_jp",
+      "dimensionCapacity": "2tb",
+      "dimensionColor": "nightsky"
+    }
+  ],
+  "displayValues": {
+    "dimensionColor": {
+      "starwhite": {
+        "value": "スターホワイト"
+      },
+      "nightsky": {
+        "value": "ナイトスカイ"
+      }
+    },
+    "dimensionCapacity": {
+      "256gb": {
+        "value": "256<small>GB</small><as-footnote data-id=\"6c341d797a26c8d39cc2f0a6925a8d4e\" data-assigned=\"true\"><sup data-autom=\"footnote-sub\" class=\"as-footnote\"><span class=\"visuallyhidden\">&nbsp;脚注&nbsp;</span>1</sup></as-footnote>"
+      },
+      "512gb": {
+        "value": "512<small>GB</small><as-footnote data-id=\"6c341d797a26c8d39cc2f0a6925a8d4e\" data-assigned=\"true\"><sup data-autom=\"footnote-sub\" class=\"as-footnote\"><span class=\"visuallyhidden\">&nbsp;脚注&nbsp;</span>1</sup></as-footnote>"
+      },
+      "1tb": {
+        "value": "1<small>TB</small><as-footnote data-id=\"6c341d797a26c8d39cc2f0a6925a8d4e\" data-assigned=\"true\"><sup data-autom=\"footnote-sub\" class=\"as-footnote\"><span class=\"visuallyhidden\">&nbsp;脚注&nbsp;</span>1</sup></as-footnote>\n"
+      },
+      "2tb": {
+        "value": "2<small>TB</small><as-footnote data-id=\"6c341d797a26c8d39cc2f0a6925a8d4e\" data-assigned=\"true\"><sup data-autom=\"footnote-sub\" class=\"as-footnote\"><span class=\"visuallyhidden\">&nbsp;脚注&nbsp;</span>1</sup></as-footnote>"
+      }
+    },
+    "prices": {
+      "mk2a4j_a_softbank_iphoneduo": {
+        "amountBeforeTradeIn": 574800.0,
+        "priceCurrency": "JPY"
+      },
+      "mk2a4j_a_unlocked_jp": {
+        "amountBeforeTradeIn": 574800.0,
+        "priceCurrency": "JPY"
+      },
+      "mk254j_a_docomo_iphoneduo": {
+        "amountBeforeTradeIn": 364800.0,
+        "priceCurrency": "JPY"
+      },
+      "mk2c4j_a_softbank_iphoneduo": {
+        "amountBeforeTradeIn": 574800.0,
+        "priceCurrency": "JPY"
+      },
+      "mk294j_a_docomo_iphoneduo": {
+        "amountBeforeTradeIn": 469800.0,
+        "priceCurrency": "JPY"
+      },
+      "mk2c4j_a_docomo_iphoneduo": {
+        "amountBeforeTradeIn": 574800.0,
+        "priceCurrency": "JPY"
+      },
+      "mk254j_a_unlocked_jp": {
+        "amountBeforeTradeIn": 364800.0,
+        "priceCurrency": "JPY"
+      },
+      "mk284j_a_unlocked_jp": {
+        "amountBeforeTradeIn": 469800.0,
+        "priceCurrency": "JPY"
+      },
+      "mk244j_a_docomo_iphoneduo": {
+        "amountBeforeTradeIn": 364800.0,
+        "priceCurrency": "JPY"
+      },
+      "mk274j_a_docomo_iphoneduo": {
+        "amountBeforeTradeIn": 399800.0,
+        "priceCurrency": "JPY"
+      },
+      "mk264j_a_softbank_iphoneduo": {
+        "amountBeforeTradeIn": 399800.0,
+        "priceCurrency": "JPY"
+      },
+      "mk244j_a_softbank_iphoneduo": {
+        "amountBeforeTradeIn": 364800.0,
+        "priceCurrency": "JPY"
+      },
+      "mk254j_a_softbank_iphoneduo": {
+        "amountBeforeTradeIn": 364800.0,
+        "priceCurrency": "JPY"
+      },
+      "mk2c4j_a_unlocked_jp": {
+        "amountBeforeTradeIn": 574800.0,
+        "priceCurrency": "JPY"
+      },
+      "mk244j_a_unlocked_jp": {
+        "amountBeforeTradeIn": 364800.0,
+        "priceCurrency": "JPY"
+      },
+      "mk274j_a_unlocked_jp": {
+        "amountBeforeTradeIn": 399800.0,
+        "priceCurrency": "JPY"
+      },
+      "mk264j_a_docomo_iphoneduo": {
+        "amountBeforeTradeIn": 399800.0,
+        "priceCurrency": "JPY"
+      },
+      "mk284j_a_softbank_iphoneduo": {
+        "amountBeforeTradeIn": 469800.0,
+        "priceCurrency": "JPY"
+      },
+      "mk2a4j_a_docomo_iphoneduo": {
+        "amountBeforeTradeIn": 574800.0,
+        "priceCurrency": "JPY"
+      },
+      "mk284j_a_docomo_iphoneduo": {
+        "amountBeforeTradeIn": 469800.0,
+        "priceCurrency": "JPY"
+      },
+      "mk294j_a_unlocked_jp": {
+        "amountBeforeTradeIn": 469800.0,
+        "priceCurrency": "JPY"
+      },
+      "mk264j_a_unlocked_jp": {
+        "amountBeforeTradeIn": 399800.0,
+        "priceCurrency": "JPY"
+      },
+      "mk274j_a_softbank_iphoneduo": {
+        "amountBeforeTradeIn": 399800.0,
+        "priceCurrency": "JPY"
+      },
+      "mk294j_a_softbank_iphoneduo": {
+        "amountBeforeTradeIn": 469800.0,
+        "priceCurrency": "JPY"
+      }
+    }
+  }
+}

@@ -264,6 +264,11 @@ class BrowseOption(BaseModel):
     selected: str | None
     choices: list[BrowseOptionChoice]
 
+class BrowseIssue(BaseModel):
+    stage: str
+    code: str
+    message: str
+
 class BrowseResult(BaseModel):
     kind: Literal['choices', 'configuration', 'variants']
     url: str
@@ -278,6 +283,8 @@ class BrowseResult(BaseModel):
     location: str | None = None
     stores: list[PickupStore] | None = None
     availability_observed_at: str | None = None
+    delivery: 'ConfigurationDeliveryEstimates | DeliveryEstimates | None' = None
+    issues: list[BrowseIssue] = []
 
 class DeliveryOption(BaseModel):
     method: str | None
@@ -299,6 +306,9 @@ class DeliveryEstimates(BaseModel):
     observed_at: str
     products: list[ProductDeliveryEstimate]
 
+class ConfigurationDeliveryEstimates(DeliveryEstimates):
+    configuration: ConfigurationResult
+
 
 class VariantPickupResult(BaseModel):
     country: str
@@ -308,6 +318,7 @@ class VariantPickupResult(BaseModel):
     stores: list[PickupStore]
 
 class StoreListEntry(BaseModel):
+    id: str | None = None
     name: str
     url: str
     region: str | None
@@ -316,3 +327,43 @@ class AllStoresResult(BaseModel):
     country: str
     count: int
     stores: list[StoreListEntry]
+    observed_at: str
+
+class ComparisonError(BaseModel):
+    stage: str
+    input: str
+    code: str
+    message: str
+
+class ComparedStore(PickupStore):
+    observed_at: str
+    queried_near: str
+
+class MissingStore(BaseModel):
+    id: str | None
+    name: str
+
+class MissingPart(BaseModel):
+    store_id: str
+    part_number: str
+
+class UnknownDelivery(BaseModel):
+    postal_code: str
+    part_number: str
+
+class ComparisonResult(BaseModel):
+    country: str
+    language: str
+    part_numbers: list[str]
+    observed_at: str
+    pickup: list[ComparedStore]
+    delivery: list[DeliveryEstimates]
+    errors: list[ComparisonError]
+    directory_checked: bool
+    directory_store_count: int | None
+    missing_stores: list[MissingStore]
+    missing_parts: list[MissingPart]
+    unknown_parts: list[MissingPart]
+    unknown_delivery: list[UnknownDelivery]
+    complete: bool
+    note: str

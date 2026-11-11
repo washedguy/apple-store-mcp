@@ -277,9 +277,10 @@ def parse_store_list(html: str, base: str, country: str, language: str) -> list[
             elif tag == "a":
                 href = dict(attrs).get("href") or ""
                 # store links look like /retail/slug/ or /de/retail/slug/
-                if dict(attrs).get("data-store-number") and re.fullmatch(r"(/[a-z-]+)?/retail/[a-z0-9-]+/?", href):
+                if dict(attrs).get("data-store-number") and re.fullmatch(r"(?:/[a-z-]+)*/retail/[a-z0-9-]+/?", href):
                     # capture text via handle_data
                     self._pending_href = href
+                    self._pending_id = dict(attrs)["data-store-number"]
 
         def handle_data(self, data):
             if self._in_heading:
@@ -287,7 +288,7 @@ def parse_store_list(html: str, base: str, country: str, language: str) -> list[
             if hasattr(self, "_pending_href"):
                 txt = data.strip()
                 if txt:
-                    self.entries.append((self.region, txt, self._pending_href))
+                    self.entries.append((self.region, txt, self._pending_href, self._pending_id))
                     del self._pending_href
 
         def handle_endtag(self, tag):
@@ -300,12 +301,12 @@ def parse_store_list(html: str, base: str, country: str, language: str) -> list[
     # deduplicate
     seen = set()
     out = []
-    for region, name, href in parser.entries:
+    for region, name, href, store_id in parser.entries:
         key = (region, name, href)
         if key in seen:
             continue
         seen.add(key)
-        out.append({"region": region, "name": name, "url": urljoin(base, href)})
+        out.append({"id": store_id, "region": region, "name": name, "url": urljoin(base, href)})
     return out
 
 
@@ -436,6 +437,7 @@ def parse_catalog_variants(html: str) -> list[dict]:
             return []
         prices = displays.get("prices") or {}
         variants = []
+        seen = set()
         for product in products:
             if not isinstance(product, dict) or not product.get("partNumber"):
                 continue
@@ -448,6 +450,11 @@ def parse_catalog_variants(html: str) -> list[dict]:
                 if isinstance(option, dict):
                     attributes[dimension.removeprefix("dimension").lower()] = plain_text(option.get("value")) or str(selected)
             price = prices.get(product.get("fullPrice")) or {}
+            identity = (product["partNumber"], price.get("amountBeforeTradeIn"),
+                        price.get("priceCurrency"), tuple(sorted(attributes.items())))
+            if identity in seen:
+                continue
+            seen.add(identity)
             variants.append({"part_number": product["partNumber"], "price": price.get("amountBeforeTradeIn"),
                              "currency": price.get("priceCurrency"), "attributes": attributes})
         return variants

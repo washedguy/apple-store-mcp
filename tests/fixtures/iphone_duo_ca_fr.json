@@ -1,0 +1,110 @@
+{
+  "products": [
+    {
+      "partNumber": "MK284VC/A",
+      "fullPrice": "mk284vc_a",
+      "dimensionColor": "starwhite",
+      "dimensionCapacity": "1tb"
+    },
+    {
+      "partNumber": "MK294VC/A",
+      "fullPrice": "mk294vc_a",
+      "dimensionColor": "nightsky",
+      "dimensionCapacity": "1tb"
+    },
+    {
+      "partNumber": "MK2A4VC/A",
+      "fullPrice": "mk2a4vc_a",
+      "dimensionColor": "starwhite",
+      "dimensionCapacity": "2tb"
+    },
+    {
+      "partNumber": "MK264VC/A",
+      "fullPrice": "mk264vc_a",
+      "dimensionColor": "starwhite",
+      "dimensionCapacity": "512gb"
+    },
+    {
+      "partNumber": "MK274VC/A",
+      "fullPrice": "mk274vc_a",
+      "dimensionColor": "nightsky",
+      "dimensionCapacity": "512gb"
+    },
+    {
+      "partNumber": "MK244VC/A",
+      "fullPrice": "mk244vc_a",
+      "dimensionColor": "starwhite",
+      "dimensionCapacity": "256gb"
+    },
+    {
+      "partNumber": "MK254VC/A",
+      "fullPrice": "mk254vc_a",
+      "dimensionColor": "nightsky",
+      "dimensionCapacity": "256gb"
+    },
+    {
+      "partNumber": "MK2C4VC/A",
+      "fullPrice": "mk2c4vc_a",
+      "dimensionColor": "nightsky",
+      "dimensionCapacity": "2tb"
+    }
+  ],
+  "displayValues": {
+    "dimensionColor": {
+      "starwhite": {
+        "value": "Blanc stellaire"
+      },
+      "nightsky": {
+        "value": "Ciel nocturne"
+      }
+    },
+    "dimensionCapacity": {
+      "256gb": {
+        "value": "256 <small>Go</small><as-footnote data-id=\"6c341d797a26c8d39cc2f0a6925a8d4e\" data-assigned=\"true\"><sup data-autom=\"footnote-sub\" class=\"as-footnote\"><span class=\"visuallyhidden\">&nbsp;Note de bas de page&nbsp;</span>1</sup></as-footnote>"
+      },
+      "512gb": {
+        "value": "512 <small>Go</small><as-footnote data-id=\"6c341d797a26c8d39cc2f0a6925a8d4e\" data-assigned=\"true\"><sup data-autom=\"footnote-sub\" class=\"as-footnote\"><span class=\"visuallyhidden\">&nbsp;Note de bas de page&nbsp;</span>1</sup></as-footnote>"
+      },
+      "1tb": {
+        "value": "1 <small>To</small><as-footnote data-id=\"6c341d797a26c8d39cc2f0a6925a8d4e\" data-assigned=\"true\"><sup data-autom=\"footnote-sub\" class=\"as-footnote\"><span class=\"visuallyhidden\">&nbsp;Note de bas de page&nbsp;</span>1</sup></as-footnote>\n"
+      },
+      "2tb": {
+        "value": "2 <small>To</small><as-footnote data-id=\"6c341d797a26c8d39cc2f0a6925a8d4e\" data-assigned=\"true\"><sup data-autom=\"footnote-sub\" class=\"as-footnote\"><span class=\"visuallyhidden\">&nbsp;Note de bas de page&nbsp;</span>1</sup></as-footnote>"
+      }
+    },
+    "prices": {
+      "mk264vc_a": {
+        "amountBeforeTradeIn": 3299.0,
+        "priceCurrency": "CAD"
+      },
+      "mk2a4vc_a": {
+        "amountBeforeTradeIn": 4799.0,
+        "priceCurrency": "CAD"
+      },
+      "mk284vc_a": {
+        "amountBeforeTradeIn": 3899.0,
+        "priceCurrency": "CAD"
+      },
+      "mk274vc_a": {
+        "amountBeforeTradeIn": 3299.0,
+        "priceCurrency": "CAD"
+      },
+      "mk2c4vc_a": {
+        "amountBeforeTradeIn": 4799.0,
+        "priceCurrency": "CAD"
+      },
+      "mk244vc_a": {
+        "amountBeforeTradeIn": 2999.0,
+        "priceCurrency": "CAD"
+      },
+      "mk294vc_a": {
+        "amountBeforeTradeIn": 3899.0,
+        "priceCurrency": "CAD"
+      },
+      "mk254vc_a": {
+        "amountBeforeTradeIn": 2999.0,
+        "priceCurrency": "CAD"
+      }
+    }
+  }
+}

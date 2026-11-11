@@ -3,6 +3,12 @@ name: CI
 on:
   push:
   pull_request:
+  workflow_dispatch:
+    inputs:
+      live_check:
+        description: Run the optional Germany live diagnostic against Apple
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -29,3 +35,12 @@ jobs:
         run: uv build
       - name: Check launcher
         run: uv run --frozen python -m apple_store_mcp --config
+
+  live-check:
+    if: github.event_name == 'workflow_dispatch' && inputs.live_check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - run: uv sync --frozen
+      - run: uv run --frozen python -m apple_store_mcp --check de
