@@ -1,0 +1,303 @@
+{
+  "products": [
+    {
+      "partNumber": "ML2T4TY/A",
+      "dimensionSteporder": 60,
+      "fullPrice": "ml2t4ty_a",
+      "dimensionCapacity": "256gb",
+      "dimensionFinish": "matte",
+      "dimensionConnection": "wifi",
+      "dimensionColor": "starlight"
+    },
+    {
+      "partNumber": "MJ6Y4TY/A",
+      "dimensionSteporder": 60,
+      "fullPrice": "mj6y4ty_a",
+      "dimensionCapacity": "512gb",
+      "dimensionFinish": "matte",
+      "dimensionConnection": "wifi",
+      "dimensionColor": "starlight"
+    },
+    {
+      "partNumber": "MJ6X4TY/A",
+      "dimensionSteporder": 50,
+      "fullPrice": "mj6x4ty_a",
+      "dimensionCapacity": "512gb",
+      "dimensionFinish": "matte",
+      "dimensionConnection": "wifi",
+      "dimensionColor": "midnight"
+    },
+    {
+      "partNumber": "ML2Q4TY/A",
+      "dimensionSteporder": 50,
+      "fullPrice": "ml2q4ty_a",
+      "dimensionCapacity": "256gb",
+      "dimensionFinish": "matte",
+      "dimensionConnection": "wifi",
+      "dimensionColor": "midnight"
+    },
+    {
+      "partNumber": "MJ6F4TY/A",
+      "dimensionSteporder": 10,
+      "fullPrice": "mj6f4ty_a",
+      "dimensionCapacity": "128gb",
+      "dimensionFinish": "glossy",
+      "dimensionConnection": "wifi",
+      "dimensionColor": "midnight"
+    },
+    {
+      "partNumber": "MJ6Q4TY/A",
+      "dimensionSteporder": 10,
+      "fullPrice": "mj6q4ty_a",
+      "dimensionCapacity": "256gb",
+      "dimensionFinish": "glossy",
+      "dimensionConnection": "wifi",
+      "dimensionColor": "midnight"
+    },
+    {
+      "partNumber": "MJ6V4TY/A",
+      "dimensionSteporder": 10,
+      "fullPrice": "mj6v4ty_a",
+      "dimensionCapacity": "512gb",
+      "dimensionFinish": "glossy",
+      "dimensionConnection": "wifi",
+      "dimensionColor": "midnight"
+    },
+    {
+      "partNumber": "MJ6J4TY/A",
+      "dimensionSteporder": 20,
+      "fullPrice": "mj6j4ty_a",
+      "dimensionCapacity": "128gb",
+      "dimensionFinish": "glossy",
+      "dimensionConnection": "wifi",
+      "dimensionColor": "starlight"
+    },
+    {
+      "partNumber": "MJ6R4TY/A",
+      "dimensionSteporder": 20,
+      "fullPrice": "mj6r4ty_a",
+      "dimensionCapacity": "256gb",
+      "dimensionFinish": "glossy",
+      "dimensionConnection": "wifi",
+      "dimensionColor": "starlight"
+    },
+    {
+      "partNumber": "MJ6W4TY/A",
+      "dimensionSteporder": 20,
+      "fullPrice": "mj6w4ty_a",
+      "dimensionCapacity": "512gb",
+      "dimensionFinish": "glossy",
+      "dimensionConnection": "wifi",
+      "dimensionColor": "starlight"
+    },
+    {
+      "partNumber": "ML2W4TY/A",
+      "dimensionSteporder": 130,
+      "fullPrice": "ml2w4ty_a",
+      "dimensionCapacity": "256gb",
+      "dimensionFinish": "matte",
+      "dimensionConnection": "wificell",
+      "dimensionColor": "midnight"
+    },
+    {
+      "partNumber": "MJ6M4TY/A",
+      "dimensionSteporder": 130,
+      "fullPrice": "mj6m4ty_a",
+      "dimensionCapacity": "512gb",
+      "dimensionFinish": "matte",
+      "dimensionConnection": "wificell",
+      "dimensionColor": "midnight"
+    },
+    {
+      "partNumber": "ML2X4TY/A",
+      "dimensionSteporder": 140,
+      "fullPrice": "ml2x4ty_a",
+      "dimensionCapacity": "256gb",
+      "dimensionFinish": "matte",
+      "dimensionConnection": "wificell",
+      "dimensionColor": "starlight"
+    },
+    {
+      "partNumber": "MJ6P4TY/A",
+      "dimensionSteporder": 140,
+      "fullPrice": "mj6p4ty_a",
+      "dimensionCapacity": "512gb",
+      "dimensionFinish": "matte",
+      "dimensionConnection": "wificell",
+      "dimensionColor": "starlight"
+    },
+    {
+      "partNumber": "MJ674TY/A",
+      "dimensionSteporder": 90,
+      "fullPrice": "mj674ty_a",
+      "dimensionCapacity": "128gb",
+      "dimensionFinish": "glossy",
+      "dimensionConnection": "wificell",
+      "dimensionColor": "midnight"
+    },
+    {
+      "partNumber": "MJ6C4TY/A",
+      "dimensionSteporder": 90,
+      "fullPrice": "mj6c4ty_a",
+      "dimensionCapacity": "256gb",
+      "dimensionFinish": "glossy",
+      "dimensionConnection": "wificell",
+      "dimensionColor": "midnight"
+    },
+    {
+      "partNumber": "MJ6H4TY/A",
+      "dimensionSteporder": 90,
+      "fullPrice": "mj6h4ty_a",
+      "dimensionCapacity": "512gb",
+      "dimensionFinish": "glossy",
+      "dimensionConnection": "wificell",
+      "dimensionColor": "midnight"
+    },
+    {
+      "partNumber": "MJ684TY/A",
+      "dimensionSteporder": 100,
+      "fullPrice": "mj684ty_a",
+      "dimensionCapacity": "128gb",
+      "dimensionFinish": "glossy",
+      "dimensionConnection": "wificell",
+      "dimensionColor": "starlight"
+    },
+    {
+      "partNumber": "MJ6D4TY/A",
+      "dimensionSteporder": 100,
+      "fullPrice": "mj6d4ty_a",
+      "dimensionCapacity": "256gb",
+      "dimensionFinish": "glossy",
+      "dimensionConnection": "wificell",
+      "dimensionColor": "starlight"
+    },
+    {
+      "partNumber": "MJ6K4TY/A",
+      "dimensionSteporder": 100,
+      "fullPrice": "mj6k4ty_a",
+      "dimensionCapacity": "512gb",
+      "dimensionFinish": "glossy",
+      "dimensionConnection": "wificell",
+      "dimensionColor": "starlight"
+    }
+  ],
+  "displayValues": {
+    "dimensionColor": {
+      "midnight": {
+        "value": "Mitternacht"
+      },
+      "starlight": {
+        "value": "Polarstern"
+      }
+    },
+    "dimensionCapacity": {
+      "128gb": {
+        "value": "128 GB\n<div class=\"form-label-small\">A20&nbsp;Pro&nbsp;Chip:<br />5‑Core&nbsp;CPU, 7‑Core&nbsp;GPU<br />16‑Core Neural&nbsp;Engine</div>"
+      },
+      "256gb": {
+        "value": "256 GB\n<div class=\"form-label-small\">A20&nbsp;Pro&nbsp;Chip:<br />5‑Core&nbsp;CPU, 7‑Core&nbsp;GPU<br />16‑Core Neural&nbsp;Engine</div>"
+      },
+      "512gb": {
+        "value": "512 GB<div class=\"form-label-small\">A20&nbsp;Pro&nbsp;Chip:<br />6‑Core&nbsp;CPU, 7‑Core&nbsp;GPU<br />Dual 16‑Core Neural&nbsp;Engine</div>"
+      }
+    },
+    "dimensionFinish": {
+      "glossy": {
+        "value": "Standardglas"
+      },
+      "matte": {
+        "value": "Nanotexturglas\n<div class=\"form-label-small\">Erhältlich in Modellen mit 256&nbsp;GB&nbsp;oder&nbsp;512&nbsp;GB Speicherplatz</div>"
+      }
+    },
+    "dimensionConnection": {
+      "wifi": {
+        "value": "Wi-Fi<div class=\"form-label-small\">Jedes iPad kann sich mit WLAN verbinden, damit du in Verbindung bleiben kannst.&nbsp;</div>"
+      },
+      "wificell": {
+        "value": "Wi-Fi + Cellular<div class=\"form-label-small\">Mit Wi-Fi&nbsp;+ Cellular kannst du in Verbindung bleiben, wenn kein WLAN verfügbar ist.</div>"
+      }
+    },
+    "prices": {
+      "mj6v4ty_a": {
+        "amountBeforeTradeIn": 1129.0,
+        "priceCurrency": "EUR"
+      },
+      "mj6c4ty_a": {
+        "amountBeforeTradeIn": 1049.0,
+        "priceCurrency": "EUR"
+      },
+      "mj674ty_a": {
+        "amountBeforeTradeIn": 919.0,
+        "priceCurrency": "EUR"
+      },
+      "ml2x4ty_a": {
+        "amountBeforeTradeIn": 1179.0,
+        "priceCurrency": "EUR"
+      },
+      "mj6m4ty_a": {
+        "amountBeforeTradeIn": 1429.0,
+        "priceCurrency": "EUR"
+      },
+      "ml2t4ty_a": {
+        "amountBeforeTradeIn": 1009.0,
+        "priceCurrency": "EUR"
+      },
+      "mj6y4ty_a": {
+        "amountBeforeTradeIn": 1259.0,
+        "priceCurrency": "EUR"
+      },
+      "mj6p4ty_a": {
+        "amountBeforeTradeIn": 1429.0,
+        "priceCurrency": "EUR"
+      },
+      "mj6w4ty_a": {
+        "amountBeforeTradeIn": 1129.0,
+        "priceCurrency": "EUR"
+      },
+      "ml2w4ty_a": {
+        "amountBeforeTradeIn": 1179.0,
+        "priceCurrency": "EUR"
+      },
+      "mj6r4ty_a": {
+        "amountBeforeTradeIn": 879.0,
+        "priceCurrency": "EUR"
+      },
+      "mj684ty_a": {
+        "amountBeforeTradeIn": 919.0,
+        "priceCurrency": "EUR"
+      },
+      "mj6j4ty_a": {
+        "amountBeforeTradeIn": 749.0,
+        "priceCurrency": "EUR"
+      },
+      "mj6k4ty_a": {
+        "amountBeforeTradeIn": 1299.0,
+        "priceCurrency": "EUR"
+      },
+      "mj6q4ty_a": {
+        "amountBeforeTradeIn": 879.0,
+        "priceCurrency": "EUR"
+      },
+      "mj6x4ty_a": {
+        "amountBeforeTradeIn": 1259.0,
+        "priceCurrency": "EUR"
+      },
+      "mj6h4ty_a": {
+        "amountBeforeTradeIn": 1299.0,
+        "priceCurrency": "EUR"
+      },
+      "mj6d4ty_a": {
+        "amountBeforeTradeIn": 1049.0,
+        "priceCurrency": "EUR"
+      },
+      "ml2q4ty_a": {
+        "amountBeforeTradeIn": 1009.0,
+        "priceCurrency": "EUR"
+      },
+      "mj6f4ty_a": {
+        "amountBeforeTradeIn": 749.0,
+        "priceCurrency": "EUR"
+      }
+    }
+  }
+}

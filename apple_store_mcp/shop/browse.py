@@ -134,8 +134,10 @@ async def browse(client, url, requested=None, location=None, postal_code=None):
     variants = parse_catalog_variants(html)
     if variants:
         for name, value in requested.items():
-            variants = [v for v in variants if any(_normalize(name) == _normalize(k) and
-                        _normalize(value) == _normalize(val) for k, val in v['attributes'].items())]
+            alias = {'storage': 'capacity', 'display': 'finish', 'connectivity': 'connection'}.get(name.casefold(), name)
+            variants = [v for v in variants if any(_normalize(k) in {_normalize(name), _normalize(alias)} and
+                        _normalize(value) == _normalize(val)
+                        for k, val in v['attributes'].items())]
         out = {'kind': 'variants', 'url': final, 'currency': client.currency, 'variants': variants,
                'observed_at': datetime.now(timezone.utc).isoformat()}
         parts = list(dict.fromkeys(v['part_number'] for v in variants))

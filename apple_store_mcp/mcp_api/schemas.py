@@ -85,6 +85,7 @@ class VariantPrice(BaseModel):
     currency: str | None = None
     url: str | None = None
     attributes: dict[str, str] = {}
+    attribute_descriptions: dict[str, str] = {}
 
 class Offer(BaseModel):
     offer_id: str
@@ -376,18 +377,22 @@ class InformationPrice(BaseModel):
     display: str | None = None
 
 class OptionRequirement(BaseModel):
-    status: Literal['compatible', 'requires_changes', 'unavailable_or_unknown']
+    status: Literal['compatible', 'requires_changes', 'unavailable_or_unknown', 'observed_with']
     when: str
     price_change: InformationPrice | None = None
+    dimension: str | None = None
+    values: list[str] = []
     description: str
 
 class InformationOption(BaseModel):
     name: str
+    description: str | None = None
     price: InformationPrice | None
     requirements: list[OptionRequirement]
 
 class InformationVariant(BaseModel):
     attributes: dict[str, str]
+    attribute_descriptions: dict[str, str] = {}
     price: float | None = None
     price_display: str | None = None
     currency: str | None = None

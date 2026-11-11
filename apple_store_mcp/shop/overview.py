@@ -15,14 +15,19 @@ def _words(text):
     return set(re.findall(r'[^\W_]+', text.casefold()))
 
 
-def _best_choice(query, choices):
+def _matching_choices(query, choices):
     tokens = _words(query)
     scored = [(len(tokens & _words(choice['name'])), choice) for choice in choices]
     if not scored:
-        return None
+        return []
     highest = max(score for score, _ in scored)
     best = [choice for score, choice in scored if score == highest]
-    return best[0] if len(best) == 1 and tokens.issubset(_words(best[0]['name'])) else None
+    return [choice for choice in best if tokens.issubset(_words(choice['name']))]
+
+
+def _best_choice(query, choices):
+    matches = _matching_choices(query, choices)
+    return matches[0] if len(matches) == 1 else None
 
 
 async def _locate(client, product):
@@ -65,14 +70,33 @@ async def overview(client, product, options=None, location=None, postal_code=Non
                 seen.add(target)
         if not links:
             raise RetailerError('No supported product information was found on this page.', code='retailer_changed')
-        choice = _best_choice(product, links) if not product.startswith('https://') else None
+        matches = _matching_choices(product, links) if not product.startswith('https://') else []
+        choice = matches[0] if len(matches) == 1 else None
         if len(links) == 1:
             choice = links[0]
+        resolved = None
+        if choice is None and len(matches) > 1:
+            # Distinct links can lead to the same product. Verify redirects rather
+            # than guessing that similarly named links are equivalent.
+            destinations = []
+            for match in matches:
+                try:
+                    page, target = await fetch_text(match['url'], retries=0)
+                except RetailerError:
+                    destinations = []
+                    break
+                if not _valid_url(target, client.host):
+                    destinations = []
+                    break
+                destinations.append((page, target))
+            if destinations and len({target for _, target in destinations}) == 1:
+                resolved = destinations[0]
+                choice = matches[0]
         if choice is None:
             return {'kind': 'choices', 'product': product, 'country': client.country,
-                    'url': final, 'choices': links, 'observed_at': datetime.now(timezone.utc).isoformat(),
+                    'url': final, 'choices': matches or links, 'observed_at': datetime.now(timezone.utc).isoformat(),
                     'note': 'More than one product matches. Choose a page to see its prices.'}
-        html, final = await fetch_text(choice['url'], retries=0)
+        html, final = resolved or await fetch_text(choice['url'], retries=0)
         if not _valid_url(final, client.host):
             raise RetailerError('Apple redirected to an unexpected host.', code='blocked')
         data = _metadata(html)
@@ -83,7 +107,8 @@ async def overview(client, product, options=None, location=None, postal_code=Non
     discrete = parse_catalog_variants(html)
     if discrete:
         result = await browse(client, final, requested, location, postal_code)
-        items = [{'attributes': v.get('attributes') or {}, 'price': v.get('price'),
+        items = [{'attributes': v.get('attributes') or {},
+                  'attribute_descriptions': v.get('attribute_descriptions') or {}, 'price': v.get('price'),
                   'currency': v.get('currency') or client.currency,
                   'part_number': v.get('part_number')} for v in result['variants']]
         return {'kind': 'products', 'product': title or product, 'country': client.country, 'url': final,

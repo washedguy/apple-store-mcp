@@ -442,13 +442,23 @@ def parse_catalog_variants(html: str) -> list[dict]:
             if not isinstance(product, dict) or not product.get("partNumber"):
                 continue
             attributes = {}
+            attribute_descriptions = {}
             for dimension, values in displays.items():
                 selected = product.get(dimension)
                 if selected is None or not dimension.startswith("dimension") or not isinstance(values, dict):
                     continue
                 option = values.get(selected) or {}
                 if isinstance(option, dict):
-                    attributes[dimension.removeprefix("dimension").lower()] = plain_text(option.get("value")) or str(selected)
+                    key = dimension.removeprefix("dimension").lower()
+                    raw = option.get("value") or ""
+                    if not isinstance(raw, str):
+                        raw = ""
+                    parts = re.split(r"(?i)(?=<div\b|<p\b|<br\s*/?>)", raw, maxsplit=1)
+                    attributes[key] = plain_text(parts[0]) or str(selected)
+                    if len(parts) > 1:
+                        description = plain_text(parts[1])
+                        if description:
+                            attribute_descriptions[key] = description
             price = prices.get(product.get("fullPrice")) or {}
             identity = (product["partNumber"], price.get("amountBeforeTradeIn"),
                         price.get("priceCurrency"), tuple(sorted(attributes.items())))
@@ -456,7 +466,8 @@ def parse_catalog_variants(html: str) -> list[dict]:
                 continue
             seen.add(identity)
             variants.append({"part_number": product["partNumber"], "price": price.get("amountBeforeTradeIn"),
-                             "currency": price.get("priceCurrency"), "attributes": attributes})
+                             "currency": price.get("priceCurrency"), "attributes": attributes,
+                             "attribute_descriptions": attribute_descriptions})
         return variants
     except (TypeError, ValueError, AttributeError):
         return []

@@ -46,6 +46,8 @@ Use `compare_availability` to check several pickup locations and delivery postco
 
 For example, call `product_information` with `{"product": "MacBook Pro PROLED XDR", "country": "de"}`. Its `options` groups contain entries such as `{"name": "48 GB", "price": {"amount": 660, "currency": "EUR", "kind": "change_from_example"}, "requirements": [...]}`. A `starting_at` price is the lowest observed base-configuration price for that choice. A `change_from_example` price is relative to `example_1`, not the total price. Each requirement identifies the example to which it applies; the examples are sampled configurations, not a complete compatibility matrix. A null price or empty requirements list means the server did not establish one.
 
+For a discrete product, `{"product": "iPad mini", "country": "de", "location": "Frankfurt am Main", "postal_code": "60313"}` returns the listed variants, grouped options and prices, nearby pickup quotes and delivery estimates. Requirements marked `observed_with` describe combinations in the returned variants; they are not proof of every possible combination. Filter with `options`, for example `{"storage": "256 GB", "color": "Mitternacht"}`.
+
 The lower-level `get_configuration_options`, `get_configuration_pickup` and `check_configuration_delivery` tools accept Apple's collection and dimension identifiers. `browse_sitemap` and `find_stores` provide additional discovery options. The server is read-only.
 
 ## Limitations

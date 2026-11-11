@@ -28,3 +28,12 @@ class RecordedCatalogTests(unittest.TestCase):
         self.assertEqual(len(result['variant_prices']), 48)
         self.assertEqual(result['currency'], 'USD')
         self.assertTrue(all(v['part_number'] and v['price'] and v['attributes'] for v in result['variant_prices']))
+
+    def test_german_ipad_mini_has_clean_labels_and_preserved_details(self):
+        text = (FIXTURES / 'ipad_mini_de.json').read_text(encoding='utf-8')
+        variants = parse_catalog_variants('productSelectionData: ' + text)
+        self.assertEqual(len(variants), 20)
+        self.assertEqual({v['attributes']['capacity'] for v in variants}, {'128 GB', '256 GB', '512 GB'})
+        nano = next(v for v in variants if v['attributes']['finish'] == 'Nanotexturglas')
+        self.assertIn('256', nano['attribute_descriptions']['finish'])
+        self.assertIn('Chip', nano['attribute_descriptions']['capacity'])
