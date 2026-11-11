@@ -19,6 +19,7 @@ class ProtocolTests(unittest.TestCase):
                     tools = await session.list_tools()
                     self.assertIn('compare_availability', {t.name for t in tools.tools})
                     self.assertIn('check_configuration_delivery', {t.name for t in tools.tools})
+                    self.assertIn('product_information', {t.name for t in tools.tools})
                     result = await session.call_tool('list_storefronts', {})
                     self.assertFalse(result.is_error)
                     self.assertTrue(any(x['country'] == 'de' for x in result.structured_content['storefronts']))

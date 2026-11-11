@@ -4,12 +4,13 @@ from typing import Annotated, Literal
 from .mcp_api.server import StructuredMCPServer
 from mcp.server.mcpserver.exceptions import ToolError
 from pydantic import Field
-from .mcp_api.schemas import AllStoresResult, BrowseResult, ComparisonResult, ConfigurationDeliveryEstimates, ConfigurationResult, DeliveryEstimates, VariantPickupResult, FulfillmentResult, ProductResult, SearchResult, SitemapResult, StorefrontList, StoreResult
+from .mcp_api.schemas import AllStoresResult, BrowseResult, ComparisonResult, ConfigurationDeliveryEstimates, ProductInformation, ConfigurationResult, DeliveryEstimates, VariantPickupResult, FulfillmentResult, ProductResult, SearchResult, SitemapResult, StorefrontList, StoreResult
 
 from .client import Client, RetailerError
 from .shop.config import STOREFRONTS
 from .shop.cache import cached_call
 from .shop.browse import browse
+from .shop.product_info import product_info
 from .shop.comparison import compare
 from .shop.fulfillment import variant_pickup
 from .shop.stores import list_all
@@ -17,7 +18,7 @@ from .shop.stores import list_all
 mcp = StructuredMCPServer("apple-store", instructions=(
     "Search the Apple Store. Use list_storefronts to discover supported countries and shop languages. "
     "Use search_products for sitemap discovery; select apple_search and the accessories tab for priced accessory results. "
-    "Use explore_product on a product page to discover buy choices, readable configuration options, prices, and optional nearby store availability. Use get_product for product details. Use get_configuration_options for current price and compatible choices; use get_configuration_pickup to check those selections near a location. Use compare_availability to compare variant pickup and delivery across locations, including all stores in smaller countries. Use check_delivery for part numbers or check_configuration_delivery for configured products and a postal code. These tools only read information. Use find_stores to find Apple retail stores. "
+    "Use product_information to compare products, option prices and requirements, and optionally availability. Use get_product for product details. Use get_configuration_options for current price and compatible choices; use get_configuration_pickup to check those selections near a location. Use compare_availability to compare variant pickup and delivery across locations, including all stores in smaller countries. Use check_delivery for part numbers or check_configuration_delivery for configured products and a postal code. These tools only read information. Use find_stores to find Apple retail stores. "
     "Prices and availability can change; availability is not a reservation or exact stock count."
 ))
 
@@ -115,6 +116,22 @@ async def get_product(
         result = await cached_call("product", (country, language, reference.strip()), fresh,
                                    lambda: client.product(reference.strip()))
         return ProductResult.model_validate(result)
+    except RetailerError as exc:
+        raise ToolError(f"[{exc.code}] {exc}") from exc
+
+
+@mcp.tool(structured_output=True)
+async def product_information(
+    product: Annotated[str, Field(min_length=1, max_length=500, description="Product name or Apple product page URL, for example MacBook Pro PROLED XDR.")],
+    country: Country = "us",
+    language: Language = None,
+    options: Annotated[dict[str, str] | None, Field(description="Optional product attributes to narrow the results, such as memory or color.")] = None,
+    location: Annotated[str | None, Field(max_length=150, description="Optional city or postal code for nearby store availability.")] = None,
+    postal_code: Annotated[str | None, Field(max_length=32, description="Optional delivery postal code.")] = None,
+) -> ProductInformation:
+    """Compare product variants, prices and option requirements. Requirements and upgrade prices are scoped to the stated example, not inferred for all combinations. Availability is checked only for identified variants or a clearly described configuration. No purchases or reservations."""
+    try:
+        return ProductInformation.model_validate(await product_info(_client(country, language), product, options, location, postal_code))
     except RetailerError as exc:
         raise ToolError(f"[{exc.code}] {exc}") from exc
 

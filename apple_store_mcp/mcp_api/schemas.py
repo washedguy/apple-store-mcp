@@ -256,6 +256,7 @@ class BrowseOptionChoice(BaseModel):
     name: str
     value: str
     compatible: bool
+    blocked: bool | None = None
     requires_changes: bool
     price_change: float | None
 
@@ -367,3 +368,46 @@ class ComparisonResult(BaseModel):
     unknown_delivery: list[UnknownDelivery]
     complete: bool
     note: str
+
+class InformationPrice(BaseModel):
+    amount: float
+    currency: str
+    kind: Literal['starting_at', 'change_from_example']
+    display: str | None = None
+
+class OptionRequirement(BaseModel):
+    status: Literal['compatible', 'requires_changes', 'unavailable_or_unknown']
+    when: str
+    price_change: InformationPrice | None = None
+    description: str
+
+class InformationOption(BaseModel):
+    name: str
+    price: InformationPrice | None
+    requirements: list[OptionRequirement]
+
+class InformationVariant(BaseModel):
+    attributes: dict[str, str]
+    price: float | None = None
+    price_display: str | None = None
+    currency: str | None = None
+    part_number: str | None = None
+
+class ProductInformation(BaseModel):
+    kind: Literal['choices', 'products', 'configuration']
+    product: str
+    country: str
+    url: str
+    observed_at: str
+    currency: str | None = None
+    choices: list[BrowseChoice] = []
+    variants: list[InformationVariant] = []
+    options: dict[str, list[InformationOption]] = {}
+    example_configuration: dict[str, str] | None = None
+    example_configurations: dict[str, dict[str, str]] = {}
+    availability_configuration: dict[str, str] | None = None
+    availability_observed_at: str | None = None
+    stores: list[PickupStore] | None = None
+    delivery: ConfigurationDeliveryEstimates | DeliveryEstimates | None = None
+    issues: list[BrowseIssue] = []
+    note: str | None = None

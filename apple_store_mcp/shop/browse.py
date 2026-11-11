@@ -181,6 +181,7 @@ async def browse(client, url, requested=None, location=None, postal_code=None):
             value = choice['value']
             choices.append({'name': labels.get(name, {}).get(value, value), 'value': value,
                             'compatible': choice['category'] == 'compatible' and not choice['blocked'],
+                            'blocked': choice['blocked'],
                             'requires_changes': choice['category'] == 'upgrade',
                             'price_change': choice['price_delta']})
         dimensions.append({'name': _key(name), 'selected': labels.get(name, {}).get(selected, selected), 'choices': choices})
