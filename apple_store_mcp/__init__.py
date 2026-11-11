@@ -1,0 +1,1 @@
+"""Apple Store MCP server package."""

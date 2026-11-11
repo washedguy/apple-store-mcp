@@ -1,0 +1,32 @@
+[project]
+name = "apple-store-mcp"
+version = "0.1.0"
+description = "Read-only MCP server for Apple Store products, prices and availability"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+dependencies = ["mcp>=2.3.0,<3", "curl-cffi>=0.17.0,<1"]
+
+[project.urls]
+Homepage = "https://github.com/washedguy/apple-store-mcp"
+Repository = "https://github.com/washedguy/apple-store-mcp"
+Issues = "https://github.com/washedguy/apple-store-mcp/issues"
+
+[project.scripts]
+apple-store-mcp = "apple_store_mcp.server:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["apple_store_mcp"]
+
+[dependency-groups]
+dev = [
+    "ruff==0.17.4",
+    "pytest>=8.0",
+]
+
+[tool.ruff.lint]
+select = ["E9", "F"]

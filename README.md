@@ -1,0 +1,68 @@
+# Apple Store MCP
+
+A read-only MCP server for browsing Apple Store products, configurations, prices, delivery estimates and store pickup. It uses HTTP requests and does not require an Apple account or browser. It cannot place orders or reserve products.
+
+## Install
+
+1. Install [uv](https://docs.astral.sh/uv/getting-started/installation/).
+2. Add this server to your MCP client's configuration:
+
+```json
+{
+  "mcpServers": {
+    "apple-store": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/washedguy/apple-store-mcp.git",
+        "apple-store-mcp"
+      ]
+    }
+  }
+}
+```
+
+Restart your MCP client. The location of this configuration depends on the client. `uvx` downloads and runs the server; no checkout is needed. If your client cannot find `uvx`, use the absolute path shown by `which uvx` (macOS/Linux) or `where uvx` (Windows).
+
+## Use it
+
+Ask your MCP client questions such as:
+
+- “Find the iPhone Duo in Germany and show its colors and storage prices.”
+- “What are the delivery estimates for these variants to postcode 60313?”
+- “Which Apple Stores near Frankfurt have this model available for pickup?”
+- “Show MacBook Pro options and the price with 48 GB of memory.”
+
+Use `list_storefronts` to see the supported countries and languages. Prices, delivery estimates and pickup availability are specific to the selected storefront and can change. A delivery estimate or pickup quote is not a reservation or exact inventory count.
+
+### How the tools work together
+
+1. `search_products` finds product pages. By default it uses Apple's sitemap, which is useful for discovery but is not a complete catalog of individual products.
+2. `explore_product` follows a product page to buying choices. For supported pages it returns named variants or configuration options and prices. `get_product` also returns available product details and part numbers.
+3. For a discrete variant, `check_delivery` checks delivery estimates for part numbers and a postal code; `check_variant_pickup` checks nearby store pickup quotes. `list_apple_stores` lists a country's stores.
+4. For a configurable product, `explore_product` can show options and nearby pickup. Pass its returned `selection` back as `options` when changing a choice to preserve the rest of the configuration.
+
+The lower-level `get_configuration_options` and `get_configuration_pickup` tools accept Apple's collection and dimension identifiers. `browse_sitemap` and `find_stores` provide additional discovery options. The server is read-only.
+
+## Limitations
+
+- Apple’s interfaces are unofficial and may change or block requests. Coverage varies by product and country; unknown or missing data does not mean an item is unavailable.
+- The sitemap does not list every variant. Apple search is available with `source: apple_search`; its accessories tab can include purchasable products and prices.
+- Delivery estimates are supported for discrete part numbers. Delivery for configurable kits has not been verified. Checking every store or postcode requires multiple calls.
+- Configurator prices can be starting prices. Option price changes depend on the selected configuration; upgrades may require changing other choices.
+- Search, product and store results use short process-local caches. Use `fresh: true` where available to bypass them.
+
+## Development
+
+```bash
+git clone https://github.com/washedguy/apple-store-mcp.git
+cd apple-store-mcp
+uv sync
+uv run ruff check apple_store_mcp tests
+uv run python -m unittest discover -s tests -v
+uv build
+```
+
+Run `uv run apple-store-mcp` to start the stdio server, or `uv run python -m apple_store_mcp --config` to print a local client configuration. `uv run python -m apple_store_mcp --check de` runs a live diagnostic; Apple can block or rate-limit requests. Optional proxies use the standard `HTTPS_PROXY` environment variable; see [.env.example](.env.example).
+
+Unofficial project, not affiliated with Apple. Licensed under the [MIT License](LICENSE).
