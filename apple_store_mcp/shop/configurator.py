@@ -86,3 +86,94 @@ async def configuration(client, collection, selections, *, session=None, referer
     result = parse_configuration(text, client.currency)
     return {"country": client.country, "language": client.language, "collection": collection,
             "requested_selections": selections, "observed_at": datetime.now(timezone.utc).isoformat(), **result}
+
+
+async def upgrade_prices(client, html):
+    """Fetch upgrade price deltas for RAM, storage, etc. from Apple's CTO endpoint."""
+    # Extract collection ID
+    coll_m = re.search(r"updateConfigUrl:\s*['\"]([^'\"]*collection=([A-Z0-9_]+)[^'\"]*)['\"]", html)
+    if not coll_m:
+        return {}
+    collection = coll_m.group(2)
+    # Extract default dimensions from first product in productSelectionData
+    selections = {}
+    m = re.search(r'"products"\s*:\s*(\[.*?\])\s*,\s*"mainDisplayValues"', html, re.S)
+    if m:
+        first = m.group(1).split('},{')[0] + '}'
+        dm = re.search(r'"dimensions"\s*:\s*(\{.*?\})', first)
+        if dm:
+            for k, v in re.findall(r'"([a-z-]+-dimension[A-Za-z]+)":"([^"]*)"', dm.group(1)):
+                selections[k] = v
+    # Defaults for memory/storage (base config)
+    if "memory-dimensionMemory" not in selections:
+        selections["memory-dimensionMemory"] = "16gb"
+    if "storage-dimensionCapacity" not in selections:
+        selections["storage-dimensionCapacity"] = "1tb"
+    if "power_adapter-wattage" not in selections:
+        selections["power_adapter-wattage"] = "0w"
+    if "keyboard-localizationCode" not in selections:
+        selections["keyboard-localizationCode"] = "deu"
+    if "software_logic-preInstalledSoftware" not in selections:
+        selections["software_logic-preInstalledSoftware"] = "none"
+    if "software_final-preInstalledSoftware" not in selections:
+        selections["software_final-preInstalledSoftware"] = "none"
+    # Build base selections from the first product
+    base_selections = dict(selections)
+    if "memory-dimensionMemory" not in base_selections:
+        base_selections["memory-dimensionMemory"] = "16gb"
+    if "storage-dimensionCapacity" not in base_selections:
+        base_selections["storage-dimensionCapacity"] = "1tb"
+    if "power_adapter-wattage" not in base_selections:
+        base_selections["power_adapter-wattage"] = "0w"
+    if "keyboard-localizationCode" not in base_selections:
+        base_selections["keyboard-localizationCode"] = "deu"
+    if "software_logic-preInstalledSoftware" not in base_selections:
+        base_selections["software_logic-preInstalledSoftware"] = "none"
+    if "software_final-preInstalledSoftware" not in base_selections:
+        base_selections["software_final-preInstalledSoftware"] = "none"
+
+    # Chips to try
+    chips = ["m6", "m5pro", "m5max", "m5", "m4"]
+    chip_cpu = {
+        "m6": "m6-12-12", "m5pro": "m5pro-15-16", "m5max": "m5max-18-32",
+        "m5": "m5-10-10", "m4": "m4-10-10",
+    }
+    # Memory defaults per chip
+    chip_mem_default = {"m6": "16gb", "m5pro": "24gb", "m5max": "36gb", "m5": "16gb", "m4": "16gb"}
+    # Storage defaults
+    chip_stor_default = {"m6": "1tb", "m5pro": "1tb", "m5max": "1tb", "m5": "1tb", "m4": "1tb"}
+
+    result = {}
+    for chip in chips:
+        sel = dict(base_selections)
+        sel["processor-dimensionChip"] = chip
+        sel["processor-dimensionChip-cpuCoreCount-gpuCoreCount"] = chip_cpu.get(chip, chip_cpu["m6"])
+        sel["memory-dimensionMemory"] = chip_mem_default.get(chip, "16gb")
+        sel["storage-dimensionCapacity"] = chip_stor_default.get(chip, "1tb")
+
+        # Call with sections to get memory + storage + display
+        try:
+            r = await configuration(client, collection, sel)
+        except RetailerError:
+            continue
+        dims = r.get("dimensions", [])
+        if not dims:
+            continue
+        chip_data = {}
+        for dim in dims:
+            name = dim["name"]
+            choices = []
+            for c in dim.get("choices", []):
+                choices.append({
+                    "value": c["value"],
+                    "price_delta": c.get("price_delta"),
+                    "display_price_delta": c.get("display_price_delta"),
+                    "is_default": c.get("default"),
+                    "is_blocked": c.get("blocked"),
+                })
+            if choices:
+                chip_data[name] = choices
+        if chip_data:
+            result[chip] = chip_data
+
+    return result

@@ -340,7 +340,7 @@ COLOR_MAP = {
     "spaceblack": "Space Black", "silver": "Silver", "midnight": "Midnight",
     "starlight": "Starlight", "gold": "Gold", "blue": "Blue", "pink": "Pink",
     "natural": "Natural Titanium", "desert": "Desert Titanium", "black": "Black",
-    "white": "White",
+    "white": "White", "nightsky": "Night Sky", "starwhite": "Star White",
 }
 CHIP_MAP = {"m5max": "M5 Max", "m5pro": "M5 Pro", "m6": "M6", "m5": "M5", "m4": "M4", "m4max": "M4 Max", "m4pro": "M4 Pro"}
 
@@ -393,31 +393,43 @@ def parse_options(html: str) -> dict:
         return {}
     txt = m.group(1)
     out = {}
-    # memory options: all gb headers with small values (RAM)
-    mem_opts = re.findall(r'"(\d+gb)":\{"header":"([^"]*)"', txt, re.I)
+    all_gb = re.findall(r'"(\d+gb)":\{"(?:header|value)":"((?:[^"\\]|\\.)*)"', txt, re.I)
+    all_tb = re.findall(r'"(\d+tb)":\{"(?:header|value)":"((?:[^"\\]|\\.)*)"', txt, re.I)
+    def clean(h):
+        h = h.replace('\\"', '"')
+        h = h.split("<as-footnote")[0]
+        h = re.sub(r"<[^>]+>", " ", h)
+        import html as _h
+        h = _h.unescape(h)
+        h = " ".join(h.split()).strip()
+        h = re.sub(r"Fu[ßs]note\s*\d*", "", h, flags=re.I).strip()
+        h = re.sub(r"\s+Speicher\s*$", "", h, flags=re.I).strip()
+        return h
     mem_labels = []
-    for key, header in mem_opts:
+    seen = set()
+    for key, header in all_gb:
         val = int(key.replace("gb", ""))
         if val <= 128:
-            mem_labels.append(re.sub(r"<[^>]+>", "", header).strip().replace("&nbsp;", " "))
-    # dedupe
-    seen = set()
-    mem_dedup = []
-    for h in mem_labels:
-        if h not in seen:
-            seen.add(h)
-            mem_dedup.append(h)
-    if mem_dedup:
-        out["memory_options"] = mem_dedup
-    # storage options: all tb headers
-    stor_opts = re.findall(r'"(\d+tb)":\{"header":"([^"]*)"', txt, re.I)
+            h = clean(header)
+            if h and h not in seen:
+                seen.add(h)
+                mem_labels.append(h)
+    if mem_labels:
+        out["memory_options"] = mem_labels
     stor_labels = []
     seen = set()
-    for key, header in stor_opts:
-        h = re.sub(r"<[^>]+>", "", header).strip().replace("&nbsp;", " ")
-        if h not in seen:
+    for key, header in all_tb:
+        h = clean(header)
+        if h and h not in seen:
             seen.add(h)
             stor_labels.append(h)
+    for key, header in all_gb:
+        val = int(key.replace("gb", ""))
+        if val >= 256:
+            h = clean(header)
+            if h and h not in seen:
+                seen.add(h)
+                stor_labels.append(h)
     if stor_labels:
         out["storage_options"] = stor_labels
     return out

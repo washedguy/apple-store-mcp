@@ -5,6 +5,7 @@ from urllib.parse import urljoin, urlsplit
 from .errors import RetailerError
 from .http import fetch_text
 from .parsing import parse_product_page, _ld_json_products, parse_variant_prices, parse_options, parse_catalog_variants
+from .configurator import upgrade_prices as fetch_upgrade_prices
 
 
 APPLE_HOSTS = {"www.apple.com", "apple.com", "www.apple.com.cn", "apple.com.cn"}
@@ -85,6 +86,13 @@ async def product(self, reference):
             details["options"] = parse_options(html)
             collections = list(dict.fromkeys(re.findall(r"collection=([A-Z0-9_]+_COLLECTION)", html)))
             details["configuration_collections"] = collections
+            try:
+                upgrades = await fetch_upgrade_prices(self, html)
+                if upgrades:
+                    details["options"] = details.get("options") or {}
+                    details["options"]["upgrade_prices"] = upgrades
+            except Exception:
+                pass
         except RetailerError as exc:
             parse_failure = exc
             continue
@@ -107,6 +115,13 @@ async def product(self, reference):
                     buy_details["variant_prices"] = buy_details["variant_prices"] or parse_catalog_variants(buy_html) or parse_variant_prices(buy_html)
                     buy_details["options"] = parse_options(buy_html)
                     collections = list(dict.fromkeys(re.findall(r"collection=([A-Z0-9_]+_COLLECTION)", buy_html)))
+                    try:
+                        upgrades = await fetch_upgrade_prices(self, buy_html)
+                        if upgrades:
+                            buy_details["options"] = buy_details.get("options") or {}
+                            buy_details["options"]["upgrade_prices"] = upgrades
+                    except Exception:
+                        pass
                     if collections:
                         details["configuration_collections"] = collections
                     if buy_details.get("price") is not None:
@@ -125,6 +140,9 @@ async def product(self, reference):
                     pass
         if details.get("currency") is None:
             details["currency"] = self.currency
+        for vp in details.get("variant_prices") or []:
+            if not vp.get("currency"):
+                vp["currency"] = details.get("currency") or self.currency
         if not details.get("id"):
             details["id"] = reference
         result = {
